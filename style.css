@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+}
+
+.cabecalho {
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+    
+}
+
+
+.conteudo-slider {
+    background-color: green;
+    height: 100vh;  
+}
+
+.conteudo-principal-qualificas {
+    background-color: cornflowerblue;
+    height: 100vh;
+    text-align: center;
+}
+
+.conteudo-principal {
+    background-color: darkcyan;
+    height: 100vh;
+}
+
+.conteudo-principal-escrito {
+    text-align: center;
+    padding: 15px;
+}
+
+.conteudo-principal-card {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    height: 80%;
+    background-color: lightsalmon;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px 20px;
+    
+    
+}
+
+.conteudo-principal-instituicao {
+    width: 25%;
+    margin: 10px 0px 10px 0px;
+    background-color: rgb(129, 32, 108);
+    text-align: center;
+}
