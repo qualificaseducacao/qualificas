@@ -36,6 +36,7 @@ body{
 
 .cabecalho img{
     margin-left: 50px;
+    display: block;
 }
 
 .lista-menu li a:hover{
@@ -89,10 +90,10 @@ body{
 }
 
 .slider label{
-    border: 2px solid #285247;
+    border: 2px solid #75baa8;
     padding: 7px;
     border-radius: 10px;
-    bottom: 25px;
+    bottom: -45px;
     cursor: pointer;
     display: block;
     position: absolute;
@@ -101,7 +102,7 @@ body{
 }
 
 .slider label:hover{
-    background-color: #285247;
+    background-color: #75baa8;
 }
 
 .slider li:nth-child(1) label{
@@ -430,4 +431,273 @@ textarea{
     margin-top: 35px;
     display: inline-flex;
     align-items: center; 
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+@media screen and (max-width:320px){
+    .lista-menu{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: flex;
+        flex-direction: column;   
+        flex-wrap: wrap; 
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor:pointer;    
+    }
+
+    .menu-mobile ul{
+        margin-left: -250px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        list-style: none;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .menu-mobile .mobile-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open{
+        display: block;
+    }
+
+    .cabecalho img{
+        margin-left: 10px;
+    }
+
+    .conteudo-slider{
+        height: 300px;
+    }
+
+    .slider{
+        width: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider label{
+        padding: 3px;
+        bottom: -25px;
+        border: 2px solid #75baa8;
+    }
+
+    .slider label:hover{
+        background-color: #75baa8;
+    }
+
+    .slider li:nth-child(1) label{
+        left: 105px;
+    }
+    
+    .slider li:nth-child(2) label{
+        left: 135px;
+    }
+    
+    .slider li:nth-child(3) label{
+        left: 165px;
+    }
+
+    .conteudo-quemsomos{
+        height: 335px;
+    }
+
+    .image{
+        height: 120px;
+        width: 120px;
+    }
+    
+    .texto h2{
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+   
+    .texto p{
+        padding-top: 30px;
+        font-family: 'Urbanist', sans-serif;
+        color: #fff;
+        font-size: 10px;
+        text-align: left;
+        width: 280px;
+        word-break: break-word;
+    }
+
+    .texto ul{
+        padding-top: 5px;
+        margin-left: -75px;
+    }
+      
+    .vantagens li{
+        margin-left: -10px;
+        list-style-type: circle;
+        font-family: 'Urbanist', sans-serif;
+        color: #fff;
+        font-size: 10px;
+    }
+    
+    .image{
+        display: flex;
+        justify-content: center;
+        margin-left: 155px;
+        margin-top: 10px;
+    }
+
+    .conteudo-principal {
+        height: 1950px;
+    
+    }
+    
+    .conteudo-principal h2{
+        font-size: 12px;
+    }
+    
+    .conteudo-principal-escrito-texto{
+        font-size: 10px;
+    }
+    
+    .conteudo-principal-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 70%;
+        height: 80%;
+    }
+
+    .conteudo-principal-instituicao{
+        flex: 1 1 150px;
+        margin:5px;
+    }
+    
+    .conteudo-principal-instituicao h3{
+        font-size: 12px;
+    }
+
+    .conteudo-principal-instituicao button{
+        width: 55%;
+        height: 35px;
+        font-size: 9px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .btn_cursos{
+        margin-top: 1700px;
+    }
+
+    .btn_cursos button{
+        width: 150px;
+        height: 50px;
+        font-size: 12px;
+    }
+    
+    .btn_cursos button:hover{
+        background-color: #75baa8;
+        color: #fff;
+    }
+
+    .contato{
+        height: 900px;
+    }
+    
+    .contato h2{
+        font-size: 12px;
+    }
+    
+    .contato p{
+        font-size: 10px;
+    }
+    
+    .formulario{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+       
+    .button input{
+        margin-left: 15px;
+        width: 275px;
+        height: 37px;
+    }
+        
+    label{
+        font-size: 12px;
+        margin-left:20px;
+    }
+
+    #nome{
+        margin-left: 15px;
+        width: 275px;
+        height: 36px;
+        font-size: 10px;
+    }
+    
+    #email{
+        margin-left: 15px;
+        width: 275px;
+        height: 36px;
+        font-size: 10px;
+    }
+    
+    #telefone{
+        margin-left: 15px;
+        width: 120px;
+        height: 36px;
+        font-size: 10px;
+    }
+    
+    #celular{
+        margin-left: 30px;
+        width: 120px;
+        height: 36px;
+        font-size: 10px;
+    }
+    
+    #lcelular{
+        margin-left: 110px;
+    }
+    
+    input::placeholder{
+        font-size: 10px;
+    }
+    
+    textarea::placeholder{
+        color: #e2e2e2;
+        font-size: 8px;
+    }
+    
+    textarea{
+        margin-left: 15px;
+        width: 275px;
+        height: 156px;
+    }
+    
+    .rodape{
+        height: 80px;
+    }
+    
+    .rede img{
+        margin-top: 0;
+        width: 35px;
+        height: 35px; 
+    }
 }

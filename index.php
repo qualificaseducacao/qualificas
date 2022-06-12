@@ -39,12 +39,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qualificas</title>
-    <link rel="stylesheet" href=".\estilo.css">
+    <link rel="stylesheet" href=".\style.css">
 </head>
 <body>
 
     <header class="cabecalho"> <!--Aqui ficará a barra de navegação do site-->
-        <a href="index.php"><img class="cabecalho-imagem" src="./img/logotipo.png" width="80px" height="50px" alt="Logo da Qualificas"></a>
+        <a href="index.php"><img class="cabecalho-imagem" id="logo-imagem" src="./img/logotipo.png" width="80px" height="50px" alt="Logo da Qualificas"></a>
         <nav class="cabecalho-menu">
             <ul class="lista-menu">
                 <li><a href="#banner" class="cabecalho-menu-item">Início</a></li>
@@ -52,6 +52,18 @@
                 <li><a href="#cursos" class="cabecalho-menu-item">Cursos</a></li>
                 <li><a href="#contato" class="cabecalho-menu-item">Contato</a></li>
             </ul>
+            <section class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./img/menu_white_36dp.svg"></button>
+            </section>
+
+            <section class="menu-mobile">
+        <ul class="lista-menu-mobile">
+                <li><a href="#banner" class="mobile-item">Início</a></li>
+                <li><a href="#team" class="mobile-item">Quem somos?</a></li>
+                <li><a href="#cursos" class="mobile-item">Cursos</a></li>
+                <li><a href="#contato" class="mobile-item">Contato</a></li>
+            </ul>
+        </section>
         </nav>
     </header>
 
@@ -108,7 +120,7 @@
                     <?php while ($dado = $con->fetch_array()){?>
                     <h3><?php echo $dado["NOME_CURSO"];?></h3>
                     <?php } ?>
-                    <a href="./cursos.html"><button id="btn_um">Saber mais</button></a>
+                    <a href="https://larjesuscriancas.org.br" target="_blank"><button id="btn_um">Acesse o site oficial</button></a>
                 </section>
 
                 <section class="conteudo-principal-instituicao"> <!--Div para ser usada na criação do card 02-->
@@ -116,7 +128,7 @@
                     <?php while ($dado2 = $con2->fetch_array()){?>
                     <h3><?php echo $dado2["NOME_CURSO"];?></h3>
                     <?php } ?>
-                    <button>Saber mais</button>
+                    <a href="https://vivereh.org.br" target="_blank"><button>Acesse o site oficial</button></a>
                 </section>
 
                 <section class="conteudo-principal-instituicao"> <!--Div para ser usada na criação do card 03-->
@@ -124,7 +136,7 @@
                     <?php while ($dado3 = $con3->fetch_array()){?>
                     <h3><?php echo $dado3["NOME_CURSO"];?></h3>
                     <?php } ?>
-                    <button>Saber mais</button>
+                    <a href="http://www.centrosocialcarisma.org" target="_blank"><button>Acesse o site oficial</button></a>
                 </section>
 
                 <section class="conteudo-principal-instituicao"> <!--Div para ser usada na criação do card 04-->
@@ -132,7 +144,7 @@
                     <?php while ($dado4 = $con4->fetch_array()){?>
                     <h3><?php echo $dado4["NOME_CURSO"];?></h3>
                     <?php } ?>
-                    <button>Saber mais</button>
+                    <a href="http://www.centrosocialcarisma.org" target="_blank"><button>Acesse o site oficial</button></a>
                 </section>
 
                 <section class="conteudo-principal-instituicao"> <!--Div para ser usada na criação do card 05-->
@@ -140,7 +152,7 @@
                     <?php while ($dado5 = $con5->fetch_array()){?>
                     <h3><?php echo $dado5["NOME_CURSO"];?></h3>
                     <?php } ?>
-                    <button id="btn_cinco">Saber mais</button>
+                    <a href="https://larjesuscriancas.org.br" target="_blank"><button id="btn_cinco">Acesse o site oficial</button></a>
                 </section>
 
                 <section class="conteudo-principal-instituicao"> <!--Div para ser usada na criação do card 06-->
@@ -148,7 +160,7 @@
                     <?php while ($dado6 = $con6->fetch_array()){?>
                     <h3><?php echo $dado6["NOME_CURSO"];?></h3>
                     <?php } ?>
-                    <button id="btn_seis">Saber mais</button>
+                    <a href="http://www.centrosocialcarisma.org" target="_blank"><button id="btn_seis">Acesse o site oficial</button></a>
                 </section>
             </section>
             <section class="btn_cursos">
@@ -202,5 +214,6 @@
             <a href="https://www.facebook.com" target="_blank"><img src="./img/rede3.png" width="60px"></a>
         </section>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>

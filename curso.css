@@ -59,10 +59,11 @@ main{
     margin-top: 100px;
     padding-top: 10px;
     background-color: #efeded;
+    width: 100vw;
 }
 .curso{
     margin-left: 150px;
-    height: 2000px;
+    height: 7850px;
     width: 100vw;
     background-color: #efeded;
 }
@@ -129,6 +130,58 @@ main{
     word-break: break-word;
 }
 
+.detalhe-curso h4{
+    margin-top: 55px;
+    color: #75baa8;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+.detalhe-curso p{
+    width: 1000px;
+    word-break: break-word;
+}
+
 .imagem-curso{
     margin-top: 75px;
+}
+
+.instituicao{
+    padding-top: 100px;
+}
+
+hr{
+    margin-top: 150px;
+    margin-left: -150px;
+    border-top: 4px dotted #75baa8;
+}
+
+h3{
+    padding-top: 50px;
+}
+
+.rodape{
+    background-color: #efeded;
+    color: #fff;
+    width: 100vw;
+    height: 150px;
+    display: inline-flex;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 18px;
+    color: #fff;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rede img{
+    margin-left: 15px;
+    margin-top: 35px;
+    display: inline-flex;
+    align-items: center; 
+}
+
+#hr_rodape{
+    margin-top: -5px;
 }
