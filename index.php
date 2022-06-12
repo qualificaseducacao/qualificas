@@ -1,6 +1,6 @@
 <?php
     include("conexao.php");
-    $consulta1 = "SELECT NOME_CURSO FROM CURSO WHERE IDCURSO = 1";
+    $consulta1 = "SELECT NOME_CURSO FROM CURSO WHERE IDCURSO = 4";
     $con = $conector->query($consulta1) or die ($mysqli->error);
 
     $consulta2 = "SELECT NOME_CURSO FROM CURSO WHERE IDCURSO = 9";
@@ -9,7 +9,7 @@
     $consulta3 = "SELECT NOME_CURSO FROM CURSO WHERE IDCURSO = 13";
     $con3 = $conector->query($consulta3) or die ($mysqli->error);
 
-    $consulta4 = "SELECT NOME_CURSO FROM CURSO WHERE IDCURSO = 20";
+    $consulta4 = "SELECT NOME_CURSO FROM CURSO WHERE IDCURSO = 19";
     $con4 = $conector->query($consulta4) or die ($mysqli->error);
 
     $consulta5 = "SELECT NOME_CURSO FROM CURSO WHERE IDCURSO = 3";
@@ -39,12 +39,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qualificas</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=".\estilo.css">
 </head>
 <body>
 
     <header class="cabecalho"> <!--Aqui ficará a barra de navegação do site-->
-        <img class="cabecalho-imagem" src="./img/logotipo.png" width="80px" height="50px" alt="Logo da Qualificas">
+        <a href="index.php"><img class="cabecalho-imagem" src="./img/logotipo.png" width="80px" height="50px" alt="Logo da Qualificas"></a>
         <nav class="cabecalho-menu">
             <ul class="lista-menu">
                 <li><a href="#banner" class="cabecalho-menu-item">Início</a></li>
