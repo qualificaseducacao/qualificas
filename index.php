@@ -17,7 +17,19 @@
 
     $consulta6 = "SELECT NOME_CURSO FROM CURSO WHERE IDCURSO = 17";
     $con6 = $conector->query($consulta6) or die ($mysqli->error);
-   
+  
+    if(isset($_POST['submit'])){
+        include("conexao.php");
+
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $telefone = $_POST['telefone'];
+        $celular = $_POST['celular'];
+        $mensagem = $_POST['mensagem'];
+        
+        $result = mysqli_query($conector, "INSERT INTO formulario(NOME,EMAIL,TEL_FIXO,TEL_CELULAR,MENSAGEM) values ('$nome','$email','$telefone','$celular','$mensagem')");
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -140,7 +152,7 @@
                 </section>
             </section>
             <section class="btn_cursos">
-                    <button>Todos os Cursos</button>
+                    <a href="./cursos.php" ><button>Todos os Cursos</button></a>
             </section>
         </section>
         <section class="contato">
@@ -151,7 +163,7 @@
                 <p> ATENÇÃO: Dúvidas referente aos cursos e instituições contatar o canal disponibilizado pela mesma.</p>
             </section>
             <section class="formulario">
-                <form>
+                <form action="index.php" method="POST">
                         <section class="inputBox">
                             <label for="nome">Nome Completo<strong>*</strong></label>
                             <br>
