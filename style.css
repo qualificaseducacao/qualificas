@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
 
 * {
     margin: 0;
@@ -17,7 +17,7 @@ body{
     top: 0;
     left: 0;
     width: 100vw;
-    background-color: #142433;
+    background-color: #75baa8;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -89,7 +89,7 @@ body{
 }
 
 .slider label{
-    border: 2px solid #fff;
+    border: 2px solid #285247;
     padding: 7px;
     border-radius: 10px;
     bottom: 25px;
@@ -101,7 +101,7 @@ body{
 }
 
 .slider label:hover{
-    background-color: #fff;
+    background-color: #285247;
 }
 
 .slider li:nth-child(1) label{
@@ -129,7 +129,7 @@ body{
 
 
 .conteudo-quemsomos {
-    background-color: #142433;
+    background-color: #75baa8;
     height: 580px;
 }
 
@@ -174,13 +174,13 @@ body{
     display: flex;
     justify-content: center;
     margin-right: -450px;
-    margin-top: -50px;
+    margin-top: -70px;
 }
 
 .conteudo-principal {
     padding-top: 30px;
     background-color: #d2d2d2;
-    height: 1000px;
+    height: 1150px;
     font-family: 'Urbanist', sans-serif;
 }
 
@@ -188,14 +188,14 @@ body{
     font-family: 'Urbanist', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    color: #142433;
+    color: #75baa8;
 }
 
 .conteudo-principal-escrito-texto{
     padding-top: 30px;
     font-family: 'Urbanist', sans-serif;
     font-weight: bold;
-    color: #142433;
+    color: black;
 }
 
 .conteudo-principal-escrito {
@@ -209,7 +209,7 @@ body{
     left: 50%;
     transform: translate(-50%);
     width: 90%;
-    height: 90%;
+    height: 80%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -220,34 +220,79 @@ body{
 .conteudo-principal-instituicao {
     width: 25%;
     margin: 10px 0px 10px 0px;
-    background-color: #142433;
+    background-color: #75baa8;
     text-align: center;
+}
+
+.conteudo-principal-instituicao img{
+    width: 100%;
+}
+
+.conteudo-principal-instituicao h3{
+    padding-top: 25px;
+}
+
+#btn_um{
+    margin-top: 15px;
+}
+
+#btn_cinco{
+    margin-top: 50px;
+}
+
+#btn_seis{
+    margin-top: 50px;
 }
 
 .conteudo-principal-instituicao button{
     border: solid 2px #fff;
     background-color: transparent;
-    width: 150px;
-    height: 30px;
-    margin-top: 25px;
+    width: 70%;
+    height: 45px;
+    margin-top: 10%;
     font-family: 'Urbanist', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
 }
 
+.btn_cursos{
+    margin-top: 870px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_cursos button{
+    border: solid 2px #75baa8;
+    background-color: transparent;
+    width: 250px;
+    height: 75px;
+    color: #75baa8;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn_cursos button:hover{
+    background-color: #75baa8;
+    color: #fff;
+}
+
 .conteudo-principal-instituicao button:hover{
     background-color: #fff;
     font-family: 'Urbanist', sans-serif;
     font-weight: bold;
-    color: #142433;
+    color: #75baa8;
 }
 
 .contato{
-    background-color: #142433;
+    background-color: #75baa8;
     font-family: 'Urbanist', sans-serif;
     font-weight: bold;
-    height: 850px;
+    height: 900px;
     width: 100vw;
     padding-top: 30px;
 }
@@ -265,7 +310,13 @@ body{
     display: flex;
     justify-content: center;
     padding-top: 35px;
-    font-size: 14px;
+    font-size: 18px;
+}
+
+.obs_contato p{
+    color: #8a0101;
+    text-align: center;
+    font-weight: bold;
 }
 
 .formulario{
@@ -286,7 +337,7 @@ label{
 }
 
 label strong{
-    color: #F50C0C;
+    color: #8a0101;
 }
 
 .button input{
@@ -298,27 +349,31 @@ label strong{
     background-color: transparent;
     color: #fff;
     font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
 }
 
 .button input:hover{
     background-color: #fff;
-    color: #142433;
+    color: #75baa8;
     transition: 0,5s;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
 }
 
 #nome{
     margin-top: 10px;
-    width: 488px;
+    width: 505px;
     height: 36px;
     padding-left: 10px;
     color: #fff;
+    font-family: 'Urbanist', sans-serif;
 }
 
 #email{
     margin-top: 10px;
-    width: 488px;
+    width: 505px;
     height: 36px;
     padding-left: 10px;
     color: #fff;
@@ -338,10 +393,21 @@ label strong{
     height: 36px;
     padding-left: 10px;
     color: #fff;
+    margin-left: 30px;
 }
 
 #lcelular{
     margin-left: 175px;
+}
+
+input::placeholder{
+    color: #e2e2e2;
+    font-size: 12px;
+}
+
+textarea::placeholder{
+    color: #e2e2e2;
+    font-size: 14px;
 }
 
 textarea{
@@ -351,14 +417,14 @@ textarea{
     background-color: transparent;
     padding-top: 20px;
     padding-left: 10px;
-    width: 488px;
+    width: 505px;
     height: 156px;
     font-family: 'Urbanist', sans-serif;
     color: #fff;
 }
 
 .rodape{
-    background-color: #142433;
+    background-color: #d2d2d2;
     color: #fff;
     width: 100vw;
     height: 150px;
@@ -372,6 +438,7 @@ textarea{
 }
 
 .rede img{
+    margin-left: 15px;
     margin-top: 35px;
     display: inline-flex;
     align-items: center; 
