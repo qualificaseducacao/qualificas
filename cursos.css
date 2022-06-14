@@ -1,0 +1,1622 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #75baa8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    z-index: 20;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cabecalho img{
+    margin-left: 50px;
+}
+
+.lista-menu li a:hover{
+    border-bottom: solid 3px #fff;
+    padding-bottom: 3px;
+}
+
+.lista-menu{
+    margin-right: 50px;
+    list-style: none;
+    display: flex;
+}
+
+.lista-menu li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+main{
+    color: black;
+    margin-top: 100px;
+    padding-top: 10px;
+    background-color: #efeded;
+    width: 100vw;
+}
+.curso{
+    margin-left: 150px;
+    height: 7850px;
+    width: 100vw;
+    background-color: #efeded;
+}
+
+.detalhe-instituicao{
+    margin-top: 30px;
+}
+
+.detalhe-instituicao h3{
+    color: black;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+}
+
+.detalhe-instituicao p{
+    margin-top: 30px;
+    color: black;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+}
+
+.btn_site{
+    margin-top: 30px;
+}
+
+.detalhe-instituicao button{
+    background-color: #75baa8;
+    color: #fff;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+}
+
+.detalhe-instituicao button:hover{
+    background-color: #fff;
+    color: #75baa8;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    border: solid 1px #75baa8;
+}
+
+.logo-instituicao{
+    margin-top: 50px;
+}
+
+.cursos h3{
+    margin-top: 30px;
+    color: black;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cursos p{
+    margin-top: 20px;
+    color: black;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    width: 1000px;
+    word-break: break-word;
+}
+
+.detalhe-curso h4{
+    margin-top: 55px;
+    color: #75baa8;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+.detalhe-curso p{
+    width: 1000px;
+    word-break: break-word;
+}
+
+.imagem-curso{
+    margin-top: 75px;
+}
+
+.instituicao{
+    padding-top: 100px;
+}
+
+hr{
+    margin-top: 150px;
+    margin-left: -150px;
+    border-top: 4px dotted #75baa8;
+}
+
+h3{
+    padding-top: 50px;
+}
+
+.rodape{
+    background-color: #efeded;
+    color: #fff;
+    width: 100vw;
+    height: 150px;
+    display: inline-flex;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 18px;
+    color: #fff;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rede img{
+    margin-left: 15px;
+    margin-top: 35px;
+    display: inline-flex;
+    align-items: center; 
+}
+
+#hr_rodape{
+    margin-top: -5px;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.menu-mobile{
+    display: none;
+}
+#logo-mobile{
+    display: none;
+}
+
+@media only screen and (max-width:320px){
+    #cabecalho-imagem{
+        display: none;
+    }
+
+    #logo-mobile{
+        display: block;
+        margin-top: 25px;
+    }
+
+    .lista-menu{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: flex;
+        flex-direction: column;   
+        flex-wrap: wrap; 
+    }
+
+    .mobile-menu-icon button{
+        margin-top: -10px;
+        background-color: transparent;
+        border: none;
+        cursor:pointer;    
+    }
+
+    .menu-mobile ul{
+        margin-left: -250px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 1rem;
+        list-style: none;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .menu-mobile .mobile-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    #cabecalho-imagem{
+        display: none;
+    }
+
+    .open{
+        display: block;
+    }
+
+    .curso{
+        margin-left: 35px;
+        height: 7250px;
+        width: 150px;
+        background-color: #efeded;
+    }
+    
+    .logo-instituicao img{
+        width: 170px;
+        margin-top: 25px;
+    }
+
+    .detalhe-instituicao{
+        margin-top: 10px;
+    }
+    
+    .detalhe-instituicao h3{
+        color: black;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+    }
+    
+    .detalhe-instituicao p{
+        margin-top: 30px;
+        color: black;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+        width: 250px;
+        word-break: break;
+    }
+    
+    .btn_site{
+        margin-top: 30px;
+    }
+    
+    .detalhe-instituicao button{
+        background-color: #75baa8;
+        color: #fff;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 150px;
+        height: 40px;
+        cursor: pointer;
+        border: none;
+        font-size: 11px;
+    }
+    
+    .detalhe-instituicao button:hover{
+        background-color: #fff;
+        color: #75baa8;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        border: solid 1px #75baa8;
+    }
+    
+    .logo-instituicao{
+        margin-top: 30px;
+    }
+    
+    .cursos h3{
+        margin-top: 30px;
+        color: black;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    .cursos p{
+        margin-top: 20px;
+        color: black;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        width: 1000px;
+        word-break: break-word;
+    }
+    
+    .detalhe-curso h4{
+        margin-top: 55px;
+        color: #75baa8;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase; 
+    }
+    
+    .detalhe-curso p{
+        width: 1000px;
+        word-break: break-word;
+    }
+    
+    .imagem-curso{
+        margin-top: 55px;
+    }
+    
+    .imagem-curso img{
+        height: 100px;
+    }
+
+    .instituicao{
+        padding-top: 100px;
+    }
+    
+    .intruducao h3{
+        font-size: 14px;
+        width: 250px;
+        word-break: break;
+        margin-top: -20px;
+    }
+
+    .intruducao p{
+        font-size: 12px;
+        width: 250px;
+        word-break: break;
+    }
+
+    .detalhe-curso h4{
+        font-size: 14px;
+        width: 250px;
+        word-break: break;
+    }
+
+    .detalhe-curso h3{
+        font-size: 14px;
+        width: 250px;
+        word-break: break;
+    }
+
+    .detalhe-curso p{
+        font-size: 12px;
+        width: 250px;
+        word-break: break;
+    }
+
+    hr{
+        margin-top: 40px;
+        margin-bottom: -120px;
+        margin-left:auto;
+        width: 250px;
+        border-top: 2px dotted #75baa8;
+    }
+    
+    h3{
+        padding-top: 50px;
+    }
+    
+    .rodape{
+        background-color: #efeded;
+        color: #fff;
+        width: 100vw;
+        height: 150px;
+        display: inline-flex;
+        font-family: 'Urbanist', sans-serif;
+        font-size: 18px;
+        color: #fff;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .rede img{
+        width: 35px;
+        height: 35px; 
+    }
+    
+    #hr_rodape{
+        margin-top: -5px;
+    }
+}    
+
+@media only screen  and (min-width:321px)
+                    and (max-width:375px){
+                        #cabecalho-imagem{
+                            display: none;
+                        }
+                    
+                        #logo-mobile{
+                            display: block;
+                        }
+                    
+                        .lista-menu{
+                            display: none;
+                        }
+                    
+                        .mobile-menu-icon{
+                            display: flex;
+                            flex-direction: column;   
+                            flex-wrap: wrap; 
+                        }
+                    
+                        .mobile-menu-icon button{
+                            margin-top: -10px;
+                            margin-right: 25px;
+                            background-color: transparent;
+                            border: none;
+                            cursor:pointer;    
+                        }
+                    
+                        .menu-mobile ul{
+                            margin-left: -310px;
+                            margin-top: 30px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            text-align: center;
+                            padding-bottom: 1rem;
+                            list-style: none;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            font-size: 12px;
+                        }
+                    
+                        .menu-mobile .mobile-item{
+                            display: block;
+                            padding-top: 1.2rem;
+                        }
+                    
+                        #cabecalho-imagem{
+                            display: none;
+                        }
+                    
+                        .open{
+                            display: block;
+                        }
+                    
+                        .curso{
+                            margin-left: 35px;
+                            height: 7250px;
+                            width: 150px;
+                            background-color: #efeded;
+                        }
+                        
+                        .logo-instituicao img{
+                            width: 170px;
+                            margin-top: 25px;
+                        }
+                    
+                        .detalhe-instituicao{
+                            margin-top: 10px;
+                        }
+                        
+                        .detalhe-instituicao h3{
+                            color: black;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                        }
+                        
+                        .detalhe-instituicao p{
+                            margin-top: 30px;
+                            color: black;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            font-size: 12px;
+                            width: 250px;
+                            word-break: break;
+                        }
+                        
+                        .btn_site{
+                            margin-top: 30px;
+                        }
+                        
+                        .detalhe-instituicao button{
+                            background-color: #75baa8;
+                            color: #fff;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            width: 150px;
+                            height: 40px;
+                            cursor: pointer;
+                            border: none;
+                            font-size: 11px;
+                        }
+                        
+                        .detalhe-instituicao button:hover{
+                            background-color: #fff;
+                            color: #75baa8;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            border: solid 1px #75baa8;
+                        }
+                        
+                        .logo-instituicao{
+                            margin-top: 30px;
+                        }
+                        
+                        .cursos h3{
+                            margin-top: 30px;
+                            color: black;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                        }
+                        
+                        .cursos p{
+                            margin-top: 20px;
+                            color: black;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            width: 1000px;
+                            word-break: break-word;
+                        }
+                        
+                        .detalhe-curso h4{
+                            margin-top: 55px;
+                            color: #75baa8;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            text-transform: uppercase; 
+                        }
+                        
+                        .detalhe-curso p{
+                            width: 1000px;
+                            word-break: break-word;
+                        }
+                        
+                        .imagem-curso{
+                            margin-top: 55px;
+                        }
+                        
+                        .imagem-curso img{
+                            height: 100px;
+                        }
+                    
+                        .instituicao{
+                            padding-top: 100px;
+                        }
+                        
+                        .intruducao h3{
+                            font-size: 14px;
+                            width: 250px;
+                            word-break: break;
+                            margin-top: -20px;
+                        }
+                    
+                        .intruducao p{
+                            font-size: 12px;
+                            width: 250px;
+                            word-break: break;
+                        }
+                    
+                        .detalhe-curso h4{
+                            font-size: 14px;
+                            width: 250px;
+                            word-break: break;
+                        }
+                    
+                        .detalhe-curso h3{
+                            font-size: 14px;
+                            width: 250px;
+                            word-break: break;
+                        }
+                    
+                        .detalhe-curso p{
+                            font-size: 12px;
+                            width: 250px;
+                            word-break: break;
+                        }
+                    
+                        hr{
+                            margin-top: 40px;
+                            margin-bottom: -120px;
+                            margin-left:auto;
+                            width: 250px;
+                            border-top: 2px dotted #75baa8;
+                        }
+                        
+                        h3{
+                            padding-top: 50px;
+                        }
+                        
+                        .rodape{
+                            background-color: #efeded;
+                            color: #fff;
+                            width: 100vw;
+                            height: 150px;
+                            display: inline-flex;
+                            font-family: 'Urbanist', sans-serif;
+                            font-size: 18px;
+                            color: #fff;  
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        .rede img{
+                            width: 45px;
+                            height: 45px; 
+                        }
+                        
+                        #hr_rodape{
+                            margin-top: -5px;
+                        }
+
+}
+
+@media only screen  and (min-width:376px)
+                    and (max-width:425px){
+                        #cabecalho-imagem{
+                            display: none;
+                        }
+                    
+                        #logo-mobile{
+                            display: block;
+                            margin-left: -50px;
+                        }
+                    
+                        .lista-menu{
+                            display: none;
+                        }
+                    
+                        .mobile-menu-icon{
+                            display: flex;
+                            flex-direction: column;   
+                            flex-wrap: wrap; 
+                        }
+                    
+                        .mobile-menu-icon button{
+                            margin-top: -10px;
+                            margin-right: 45px;
+                            background-color: transparent;
+                            border: none;
+                            cursor:pointer;    
+                        }
+                    
+                        .menu-mobile ul{
+                            margin-left: -370px;
+                            margin-top: 30px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            text-align: center;
+                            padding-bottom: 1rem;
+                            list-style: none;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            font-size: 12px;
+                        }
+                    
+                        .menu-mobile .mobile-item{
+                            display: block;
+                            padding-top: 1.2rem;
+                        }
+                    
+                        #cabecalho-imagem{
+                            display: none;
+                        }
+                    
+                        .open{
+                            display: block;
+                        }
+                    
+                        .curso{
+                            margin-left: 35px;
+                            height: 6850px;
+                            width: 150px;
+                            background-color: #efeded;
+                        }
+                        
+                        .logo-instituicao img{
+                            width: 200px;
+                            margin-top: 45px;
+                        }
+                    
+                        .detalhe-instituicao{
+                            margin-top: 10px;
+                        }
+                        
+                        .detalhe-instituicao h3{
+                            color: black;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            width: 300px;
+                            word-break: break;
+                        }
+                        
+                        .detalhe-instituicao p{
+                            margin-top: 30px;
+                            color: black;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            font-size: 12px;
+                            width: 300px;
+                            word-break: break;
+                        }
+                        
+                        .btn_site{
+                            margin-top: 30px;
+                        }
+                        
+                        .detalhe-instituicao button{
+                            background-color: #75baa8;
+                            color: #fff;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            width: 150px;
+                            height: 40px;
+                            cursor: pointer;
+                            border: none;
+                            font-size: 11px;
+                        }
+                        
+                        .detalhe-instituicao button:hover{
+                            background-color: #fff;
+                            color: #75baa8;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            border: solid 1px #75baa8;
+                        }
+                        
+                        .logo-instituicao{
+                            margin-top: 30px;
+                        }
+                        
+                        .cursos h3{
+                            margin-top: 30px;
+                            color: black;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                        }
+                        
+                        .cursos p{
+                            margin-top: 20px;
+                            color: black;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            width: 1000px;
+                            word-break: break-word;
+                        }
+                        
+                        .detalhe-curso h4{
+                            margin-top: 55px;
+                            color: #75baa8;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            text-transform: uppercase; 
+                        }
+                        
+                        .detalhe-curso p{
+                            width: 1000px;
+                            word-break: break-word;
+                        }
+                        
+                        .imagem-curso{
+                            margin-top: 55px;
+                        }
+                        
+                        .imagem-curso img{
+                            height: 100px;
+                        }
+                    
+                        .instituicao{
+                            padding-top: 100px;
+                        }
+                        
+                        .intruducao h3{
+                            font-size: 14px;
+                            width: 300px;
+                            word-break: break;
+                            margin-top: -20px;
+                        }
+                    
+                        .intruducao p{
+                            font-size: 12px;
+                            width: 300px;
+                            word-break: break;
+                        }
+                    
+                        .detalhe-curso h4{
+                            font-size: 14px;
+                            width: 300px;
+                            word-break: break;
+                        }
+                    
+                        .detalhe-curso h3{
+                            font-size: 14px;
+                            width: 300px;
+                            word-break: break;
+                        }
+                    
+                        .detalhe-curso p{
+                            font-size: 12px;
+                            width: 300px;
+                            word-break: break;
+                        }
+                    
+                        hr{
+                            margin-top: 40px;
+                            margin-bottom: -120px;
+                            margin-left:auto;
+                            width: 300px;
+                            border-top: 2px dotted #75baa8;
+                        }
+                        
+                        h3{
+                            padding-top: 50px;
+                        }
+                        
+                        .rodape{
+                            background-color: #efeded;
+                            color: #fff;
+                            width: 100vw;
+                            height: 150px;
+                            display: inline-flex;
+                            font-family: 'Urbanist', sans-serif;
+                            font-size: 18px;
+                            color: #fff;  
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        .rede img{
+                            width: 45px;
+                            height: 45px; 
+                        }
+                        
+                        #hr_rodape{
+                            margin-top: -5px;
+                        }
+
+}
+
+@media only screen  and (min-width:426px)
+                    and (max-width:768px){
+                        #cabecalho-imagem{
+                            display: none;
+                        }
+                    
+                        #logo-mobile{
+                            display: block;
+                            margin-right: 550px;
+                        }
+                    
+                        .lista-menu{
+                            display: none;
+                        }
+                    
+                        .mobile-menu-icon{
+                            display: flex;
+                            flex-direction: column;   
+                            flex-wrap: wrap; 
+                        }
+                    
+                        .mobile-menu-icon button{
+                            margin-top: -10px;
+                            margin-right: -35px;
+                            background-color: transparent;
+                            border: none;
+                            cursor:pointer;    
+                        }
+                    
+                        .menu-mobile ul{
+                            margin-left: -750px;
+                            margin-top: 30px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            text-align: center;
+                            padding-bottom: 1rem;
+                            list-style: none;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            font-size: 12px;
+                        }
+                    
+                        .menu-mobile .mobile-item{
+                            display: block;
+                            padding-top: 1.2rem;
+                        }
+                    
+                        #cabecalho-imagem{
+                            display: none;
+                        }
+                    
+                        .open{
+                            display: block;
+                        }
+                    
+                        .curso{
+                            margin-left: 35px;
+                            height: 7750px;
+                            width: 150px;
+                            background-color: #efeded;
+                        }
+                        
+                        .logo-instituicao img{
+                            width: 400px;
+                            margin-top: 45px;
+                        }
+                    
+                        .detalhe-instituicao{
+                            margin-top: 10px;
+                        }
+                        
+                        .detalhe-instituicao h3{
+                            color: black;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            width: 500px;
+                            word-break: break;
+                            font-size: 20px;
+                        }
+                        
+                        .detalhe-instituicao p{
+                            margin-top: 30px;
+                            color: black;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            font-size: 16px;
+                            width: 500px;
+                            word-break: break;
+                        }
+                        
+                        .btn_site{
+                            margin-top: 30px;
+                        }
+                        
+                        .detalhe-instituicao button{
+                            background-color: #75baa8;
+                            color: #fff;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            width: 250px;
+                            height: 60px;
+                            cursor: pointer;
+                            border: none;
+                            font-size: 16px;
+                        }
+                        
+                        .detalhe-instituicao button:hover{
+                            background-color: #fff;
+                            color: #75baa8;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            border: solid 1px #75baa8;
+                        }
+                        
+                        .logo-instituicao{
+                            margin-top: 30px;
+                        }
+                                                
+                        .detalhe-curso h4{
+                            margin-top: 55px;
+                            color: #75baa8;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            text-transform: uppercase; 
+                            font-size: 18px;
+                        }
+                        
+                        .detalhe-curso p{
+                            width: 1000px;
+                            word-break: break-word;
+                        }
+                        
+                        .imagem-curso{
+                            margin-top: 55px;
+                        }
+                        
+                        .imagem-curso img{
+                            height: 300px;
+                        }
+                    
+                        .instituicao{
+                            padding-top: 50px;
+                        }
+                        
+                        .intruducao h3{
+                            font-size: 18px;
+                            width: 500px;
+                            word-break: break;
+                            margin-top: -20px;
+                        }
+                    
+                        .intruducao p{
+                            font-size: 14px;
+                            width: 500px;
+                            word-break: break;
+                        }
+                    
+                        .detalhe-curso h4{
+                            font-size: 16px;
+                            width: 500px;
+                            word-break: break;
+                        }
+                    
+                        .detalhe-curso h3{
+                            font-size: 18px;
+                            width: 500px;
+                            word-break: break;
+                        }
+                    
+                        .detalhe-curso p{
+                            font-size: 14px;
+                            width: 500px;
+                            word-break: break;
+                        }
+                    
+                        hr{
+                            margin-top: 60px;
+                            margin-bottom: -80px;
+                            margin-left:auto;
+                            width: 500px;
+                            border-top: 2px dotted #75baa8;
+                        }
+                        
+                        h3{
+                            padding-top: 50px;
+                        }
+                        
+                        .rodape{
+                            background-color: #efeded;
+                            color: #fff;
+                            width: 100vw;
+                            height: 150px;
+                            display: inline-flex;
+                            font-family: 'Urbanist', sans-serif;
+                            font-size: 18px;
+                            color: #fff;  
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        .rede img{
+                            width: 45px;
+                            height: 45px; 
+                        }
+                        
+                        #hr_rodape{
+                            margin-top: -5px;
+                        }
+
+}
+
+@media only screen  and (min-width:769px)
+                    and (max-width:1024px){
+                        .mobile-menu-icon{
+                            display: none;
+                        }
+                                            
+                        .menu-mobile{
+                            display: none;
+                        }
+                        #logo-mobile{
+                            display: none;
+                        }
+                    
+                        #cabecalho-imagem{
+                            display: block;
+                        }
+                    
+                        .curso{
+                            margin-left: 35px;
+                            height: 7050px;
+                            width: 150px;
+                            background-color: #efeded;
+                        }
+                        
+                        .logo-instituicao img{
+                            width: 400px;
+                            margin-top: 45px;
+                        }
+                    
+                        .detalhe-instituicao{
+                            margin-top: 10px;
+                        }
+                        
+                        .detalhe-instituicao h3{
+                            color: black;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            width: 900px;
+                            word-break: break;
+                            font-size: 20px;
+                        }
+                        
+                        .detalhe-instituicao p{
+                            margin-top: 30px;
+                            color: black;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            font-size: 16px;
+                            width: 900px;
+                            word-break: break;
+                        }
+                        
+                        .btn_site{
+                            margin-top: 30px;
+                        }
+                        
+                        .detalhe-instituicao button{
+                            background-color: #75baa8;
+                            color: #fff;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            width: 250px;
+                            height: 60px;
+                            cursor: pointer;
+                            border: none;
+                            font-size: 16px;
+                        }
+                        
+                        .detalhe-instituicao button:hover{
+                            background-color: #fff;
+                            color: #75baa8;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            border: solid 1px #75baa8;
+                        }
+                        
+                        .logo-instituicao{
+                            margin-top: 30px;
+                        }
+                                                
+                        .detalhe-curso h4{
+                            margin-top: 55px;
+                            color: #75baa8;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            text-transform: uppercase; 
+                            font-size: 18px;
+                        }
+                        
+                        .detalhe-curso p{
+                            width: 1000px;
+                            word-break: break-word;
+                        }
+                        
+                        .imagem-curso{
+                            margin-top: 55px;
+                        }
+                        
+                        .imagem-curso img{
+                            height: 300px;
+                        }
+                    
+                        .instituicao{
+                            padding-top: 50px;
+                        }
+                        
+                        .intruducao h3{
+                            font-size: 18px;
+                            width: 900px;
+                            word-break: break;
+                            margin-top: -20px;
+                        }
+                    
+                        .intruducao p{
+                            font-size: 14px;
+                            width: 900px;
+                            word-break: break;
+                        }
+                    
+                        .detalhe-curso h4{
+                            font-size: 16px;
+                            width: 900px;
+                            word-break: break;
+                        }
+                    
+                        .detalhe-curso h3{
+                            font-size: 18px;
+                            width: 900px;
+                            word-break: break;
+                        }
+                    
+                        .detalhe-curso p{
+                            font-size: 14px;
+                            width: 900px;
+                            word-break: break;
+                        }
+                    
+                        hr{
+                            margin-top: 60px;
+                            margin-bottom: -80px;
+                            margin-left:auto;
+                            width: 500px;
+                            border-top: 2px dotted #75baa8;
+                        }
+                        
+                        h3{
+                            padding-top: 50px;
+                        }
+                        
+                        .rodape{
+                            background-color: #efeded;
+                            color: #fff;
+                            width: 100vw;
+                            height: 150px;
+                            display: inline-flex;
+                            font-family: 'Urbanist', sans-serif;
+                            font-size: 18px;
+                            color: #fff;  
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        .rede img{
+                            width: 65px;
+                            height: 65px; 
+                        }
+                        
+                        #hr_rodape{
+                            margin-top: -5px;
+                        }
+
+}
+
+@media only screen  and (min-width:1025px)
+                    and (max-width:1440px){
+                        .mobile-menu-icon{
+                            display: none;
+                        }
+                                            
+                        .menu-mobile{
+                            display: none;
+                        }
+                        #logo-mobile{
+                            display: none;
+                        }
+                    
+                        #cabecalho-imagem{
+                            display: block;
+                        }
+                    
+                        .curso{
+                            margin-left: 35px;
+                            height: 7850px;
+                            width: 150px;
+                            background-color: #efeded;
+                        }
+                        
+                        .logo-instituicao img{
+                            width: 400px;
+                            margin-top: 45px;
+                        }
+                    
+                        .detalhe-instituicao{
+                            margin-top: 10px;
+                        }
+                        
+                        .detalhe-instituicao h3{
+                            color: black;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            width: 1300px;
+                            word-break: break;
+                            font-size: 24px;
+                        }
+                        
+                        .detalhe-instituicao p{
+                            margin-top: 30px;
+                            color: black;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            font-size: 20px;
+                            width: 1300px;
+                            word-break: break;
+                        }
+                        
+                        .btn_site{
+                            margin-top: 30px;
+                        }
+                        
+                        .detalhe-instituicao button{
+                            background-color: #75baa8;
+                            color: #fff;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            width: 250px;
+                            height: 60px;
+                            cursor: pointer;
+                            border: none;
+                            font-size: 16px;
+                        }
+                        
+                        .detalhe-instituicao button:hover{
+                            background-color: #fff;
+                            color: #75baa8;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            border: solid 1px #75baa8;
+                        }
+                        
+                        .logo-instituicao{
+                            margin-top: 30px;
+                        }
+                                                
+                        .detalhe-curso h4{
+                            margin-top: 55px;
+                            color: #75baa8;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            text-transform: uppercase; 
+                            font-size: 18px;
+                        }
+                        
+                        .detalhe-curso p{
+                            width: 1000px;
+                            word-break: break-word;
+                        }
+                        
+                        .imagem-curso{
+                            margin-top: 55px;
+                        }
+                        
+                        .imagem-curso img{
+                            height: 400px;
+                        }
+                    
+                        .instituicao{
+                            padding-top: 50px;
+                        }
+                        
+                        .intruducao h3{
+                            font-size: 22px;
+                            width: 1300px;
+                            word-break: break;
+                            margin-top: -20px;
+                        }
+                    
+                        .intruducao p{
+                            font-size: 18px;
+                            width: 1300px;
+                            word-break: break;
+                        }
+                    
+                        .detalhe-curso h4{
+                            font-size: 20px;
+                            width: 1300px;
+                            word-break: break;
+                        }
+                    
+                        .detalhe-curso h3{
+                            font-size: 20px;
+                            width: 1300px;
+                            word-break: break;
+                        }
+                    
+                        .detalhe-curso p{
+                            font-size: 18px;
+                            width: 1300px;
+                            word-break: break;
+                        }
+                    
+                        hr{
+                            margin-top: 60px;
+                            margin-bottom: -80px;
+                            margin-left:auto;
+                            width: 1300px;
+                            border-top: 3px dotted #75baa8;
+                        }
+                        
+                        h3{
+                            padding-top: 50px;
+                        }
+                        
+                        .rodape{
+                            background-color: #efeded;
+                            color: #fff;
+                            width: 100vw;
+                            height: 150px;
+                            display: inline-flex;
+                            font-family: 'Urbanist', sans-serif;
+                            font-size: 18px;
+                            color: #fff;  
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        .rede img{
+                            width: 65px;
+                            height: 65px; 
+                        }
+                        
+                        #hr_rodape{
+                            margin-top: -5px;
+                        }
+
+}
+
+@media only screen  and (min-width:1441px)
+                    and (max-width:2560px){
+                        .mobile-menu-icon{
+                            display: none;
+                        }
+                                            
+                        .menu-mobile{
+                            display: none;
+                        }
+                        #logo-mobile{
+                            display: none;
+                        }
+                    
+                        #cabecalho-imagem{
+                            display: block;
+                            height: 100px;
+                            width: 150px;
+                        }
+
+                        .lista-menu li{
+                            font-size: 24px;
+                        }
+
+                        .curso{
+                            margin-left: 35px;
+                            height: 9550px;
+                            width: 150px;
+                            background-color: #efeded;
+                        }
+                        
+                        .logo-instituicao img{
+                            width: 600px;
+                            margin-top: 45px;
+                        }
+                    
+                        .detalhe-instituicao{
+                            margin-top: 10px;
+                        }
+                        
+                        .detalhe-instituicao h3{
+                            color: black;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            width: 1900px;
+                            word-break: break;
+                            font-size: 32px;
+                        }
+                        
+                        .detalhe-instituicao p{
+                            margin-top: 30px;
+                            color: black;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            font-size: 24px;
+                            width: 1900px;
+                            word-break: break;
+                        }
+                        
+                        .btn_site{
+                            margin-top: 30px;
+                        }
+                        
+                        .detalhe-instituicao button{
+                            background-color: #75baa8;
+                            color: #fff;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            width: 550px;
+                            height: 90px;
+                            cursor: pointer;
+                            border: none;
+                            font-size: 24px;
+                        }
+                        
+                        .detalhe-instituicao button:hover{
+                            background-color: #fff;
+                            color: #75baa8;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            border: solid 1px #75baa8;
+                        }
+                        
+                        .logo-instituicao{
+                            margin-top: 30px;
+                        }
+                                                
+                        .detalhe-curso h4{
+                            margin-top: 55px;
+                            color: #75baa8;
+                            font-family: 'Urbanist', sans-serif;
+                            font-weight: bold;
+                            text-transform: uppercase; 
+                            font-size: 22px;
+                        }
+                        
+                        .detalhe-curso p{
+                            width: 1000px;
+                            word-break: break-word;
+                        }
+                        
+                        .imagem-curso{
+                            margin-top: 55px;
+                        }
+                        
+                        .imagem-curso img{
+                            height: 600px;
+                        }
+                    
+                        .instituicao{
+                            padding-top: 50px;
+                        }
+                        
+                        .intruducao h3{
+                            font-size: 28px;
+                            width: 1900px;
+                            word-break: break;
+                            margin-top: -20px;
+                        }
+                    
+                        .intruducao p{
+                            font-size: 24px;
+                            width: 1900px;
+                            word-break: break;
+                        }
+                    
+                        .detalhe-curso h4{
+                            font-size: 28px;
+                            width: 1900px;
+                            word-break: break;
+                        }
+                    
+                        .detalhe-curso h3{
+                            font-size: 28px;
+                            width: 1900px;
+                            word-break: break;
+                        }
+                    
+                        .detalhe-curso p{
+                            font-size: 24px;
+                            width: 1900px;
+                            word-break: break;
+                        }
+                    
+                        hr{
+                            margin-top: 60px;
+                            margin-bottom: -80px;
+                            margin-left:auto;
+                            width: 1900px;
+                            border-top: 3px dotted #75baa8;
+                        }
+                        
+                        h3{
+                            padding-top: 50px;
+                        }
+                        
+                        .rodape{
+                            background-color: #efeded;
+                            color: #fff;
+                            width: 100vw;
+                            height: 150px;
+                            display: inline-flex;
+                            font-family: 'Urbanist', sans-serif;
+                            font-size: 18px;
+                            color: #fff;  
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        .rede img{
+                            width: 85px;
+                            height: 85px; 
+                        }
+                        
+                        #hr_rodape{
+                            margin-top: -5px;
+                        }
+
+}

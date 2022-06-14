@@ -39,12 +39,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qualificas</title>
-    <link rel="stylesheet" href=".\style.css">
+    <link rel="stylesheet" href=".\styles.css">
 </head>
 <body>
 
     <header class="cabecalho"> <!--Aqui ficará a barra de navegação do site-->
-        <a href="index.php"><img class="cabecalho-imagem" id="logo-imagem" src="./img/logotipo.png" width="80px" height="50px" alt="Logo da Qualificas"></a>
+        <a href="index.php"><img id="cabecalho-imagem" src="./img/logotipo.png" width="80px" height="50px" alt="Logo da Qualificas"></a>
+        
         <nav class="cabecalho-menu">
             <ul class="lista-menu">
                 <li><a href="#banner" class="cabecalho-menu-item">Início</a></li>
@@ -53,17 +54,18 @@
                 <li><a href="#contato" class="cabecalho-menu-item">Contato</a></li>
             </ul>
             <section class="mobile-menu-icon">
+            <a href="index.php"><img id="logo-mobile" src="./img/logotipo.png" width="80px" height="50px" style="margin-left:-180px;" alt="Logo da Qualificas"></a>
                 <button onclick="menuShow()"><img class="icon" src="./img/menu_white_36dp.svg"></button>
             </section>
 
             <section class="menu-mobile">
-        <ul class="lista-menu-mobile">
-                <li><a href="#banner" class="mobile-item">Início</a></li>
-                <li><a href="#team" class="mobile-item">Quem somos?</a></li>
-                <li><a href="#cursos" class="mobile-item">Cursos</a></li>
-                <li><a href="#contato" class="mobile-item">Contato</a></li>
-            </ul>
-        </section>
+                <ul class="lista-menu-mobile">
+                    <li><a href="#banner" class="mobile-item">Início</a></li>
+                    <li><a href="#team" class="mobile-item">Quem somos?</a></li>
+                    <li><a href="#cursos" class="mobile-item">Cursos</a></li>
+                    <li><a href="#contato" class="mobile-item">Contato</a></li>
+                </ul>
+            </section>
         </nav>
     </header>
 
@@ -214,6 +216,6 @@
             <a href="https://www.facebook.com" target="_blank"><img src="./img/rede3.png" width="60px"></a>
         </section>
     </footer>
-    <script src="./script.js"></script>
+    <script src="./scriptjava.js"></script>
 </body>
 </html>

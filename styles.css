@@ -1,0 +1,2300 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #75baa8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    z-index: 20;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cabecalho img{
+    margin-left: 50px;
+    display: block;
+}
+
+.lista-menu li a:hover{
+    border-bottom: solid 3px #fff;
+    padding-bottom: 3px;
+}
+
+.lista-menu{
+    margin-right: 50px;
+    list-style: none;
+    display: flex;
+}
+
+.lista-menu li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+.conteudo-slider {
+    background-color: #efeded;
+    width: 100vw; 
+    padding-top: 70px;
+    flex-direction: column;
+    height: 590px;
+}
+
+.slider{
+    display: block;
+    height: 400px;
+    width: 1100px;
+    margin: auto;
+    padding-top: 80px;
+    position: relative;
+}
+
+.slider li{
+    list-style: none;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider img{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider input{
+    display: none;
+}
+
+.slider label{
+    border: 2px solid #75baa8;
+    padding: 7px;
+    border-radius: 10px;
+    bottom: -45px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    z-index: 10;
+    transition: 0.5s;
+}
+
+.slider label:hover{
+    background-color: #75baa8;
+}
+
+.slider li:nth-child(1) label{
+    left: 500px;
+}
+
+.slider li:nth-child(2) label{
+    left: 550px;
+}
+
+.slider li:nth-child(3) label{
+    left: 600px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+
+.conteudo-quemsomos {
+    background-color: #75baa8;
+    height: 580px;
+}
+
+.texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.texto h2{
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#sub{
+    margin-left: -440px;
+}
+.texto p{
+    padding-top: 30px;
+    font-family: 'Urbanist', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+}
+
+.texto ul{
+    padding-top: 25px;
+}
+
+.vantagens li{
+    margin-left: -305px;
+    list-style-type: circle;
+    font-family: 'Urbanist', sans-serif;
+    color: #fff;
+    font-size: 18px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    margin-right: -450px;
+    margin-top: -70px;
+}
+
+.conteudo-principal {
+    padding-top: 30px;
+    background-color: #efeded;
+    height: 1150px;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.conteudo-principal h2{
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #75baa8;
+}
+
+.conteudo-principal-escrito-texto{
+    padding-top: 30px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.conteudo-principal-escrito {
+    text-align: center;
+    padding: 15px;
+}
+
+.conteudo-principal-card {
+    padding-top: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px 20px;    
+}
+
+.conteudo-principal-instituicao {
+    width: 25%;
+    margin: 10px 0px 10px 0px;
+    background-color: #75baa8;
+    text-align: center;
+}
+
+.conteudo-principal-instituicao img{
+    width: 100%;
+}
+
+.conteudo-principal-instituicao h3{
+    padding-top: 25px;
+}
+
+.conteudo-principal-instituicao button{
+    border: solid 2px #fff;
+    background-color: transparent;
+    width: 70%;
+    height: 45px;
+    margin-top: 25px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn_cursos{
+    margin-top: 870px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_cursos button{
+    border: solid 2px #75baa8;
+    background-color: transparent;
+    width: 250px;
+    height: 75px;
+    color: #75baa8;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn_cursos button:hover{
+    background-color: #75baa8;
+    color: #fff;
+}
+
+.conteudo-principal-instituicao button:hover{
+    background-color: #fff;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    color: #75baa8;
+}
+
+.contato{
+    background-color: #75baa8;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    height: 900px;
+    width: 100vw;
+    padding-top: 30px;
+}
+
+.contato h2{
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.contato p{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+    font-size: 18px;
+}
+
+.obs_contato p{
+    color: #8a0101;
+    text-align: center;
+    font-weight: bold;
+}
+
+.formulario{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.inputBox input{
+    border: solid 2px #fff;
+    border-radius: 15px;
+    background-color: transparent;
+    font-family: 'Urbanist', sans-serif;
+}
+
+label{
+    color: #fff;
+}
+
+label strong{
+    color: #8a0101;
+}
+
+.button input{
+    border-radius: 15px;
+    border: none; 
+    width: 505px;
+    height: 47px;
+    border: solid 2px #fff;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button input:hover{
+    background-color: #fff;
+    color: #75baa8;
+    transition: 0,5s;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+}
+
+#nome{
+    margin-top: 10px;
+    width: 505px;
+    height: 36px;
+    padding-left: 10px;
+    color: #fff;
+    font-family: 'Urbanist', sans-serif;
+}
+
+#email{
+    margin-top: 10px;
+    width: 505px;
+    height: 36px;
+    padding-left: 10px;
+    color: #fff;
+}
+
+#telefone{
+    margin-top: 10px;
+    width: 235px;
+    height: 36px;
+    padding-left: 10px;
+    color: #fff;
+}
+
+#celular{
+    margin-top: 10px;
+    width: 235px;
+    height: 36px;
+    padding-left: 10px;
+    color: #fff;
+    margin-left: 30px;
+}
+
+#lcelular{
+    margin-left: 175px;
+}
+
+input::placeholder{
+    color: #e2e2e2;
+    font-size: 12px;
+}
+
+textarea::placeholder{
+    color: #e2e2e2;
+    font-size: 14px;
+}
+
+textarea{
+    margin-top: 10px;
+    border: solid 2px #fff;
+    border-radius: 15px;
+    background-color: transparent;
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 505px;
+    height: 156px;
+    font-family: 'Urbanist', sans-serif;
+    color: #fff;
+}
+
+.rodape{
+    background-color: #efeded;
+    color: #fff;
+    width: 100vw;
+    height: 150px;
+    display: inline-flex;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 18px;
+    color: #fff;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rede img{
+    margin-left: 15px;
+    margin-top: 35px;
+    display: inline-flex;
+    align-items: center; 
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.menu-mobile{
+    display: none;
+}
+#logo-mobile{
+    display: none;
+}
+
+@media only screen and (max-width:320px){
+    #cabecalho-imagem{
+        display: none;
+    }
+
+    #logo-mobile{
+        display: block;
+    }
+
+     .lista-menu{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: flex;
+        flex-direction: column;   
+        flex-wrap: wrap; 
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor:pointer;    
+    }
+
+    .menu-mobile ul{
+        margin-left: -250px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 1rem;
+        list-style: none;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .menu-mobile .mobile-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    #cabecalho-imagem{
+        display: none;
+    }
+
+    .open{
+        display: block;
+    }
+
+    .conteudo-slider{
+        height: 300px;
+    }
+
+    .slider{
+        width: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider label{
+        padding: 3px;
+        bottom: -25px;
+        border: 2px solid #75baa8;
+    }
+
+    .slider label:hover{
+        background-color: #75baa8;
+    }
+
+    .slider li:nth-child(1) label{
+        left: 105px;
+    }
+    
+    .slider li:nth-child(2) label{
+        left: 135px;
+    }
+    
+    .slider li:nth-child(3) label{
+        left: 165px;
+    }
+
+    .conteudo-quemsomos{
+        height: 335px;
+    }
+
+    .image{
+        height: 120px;
+        width: 120px;
+    }
+    
+    .texto h2{
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+   
+    .texto p{
+        padding-top: 30px;
+        font-family: 'Urbanist', sans-serif;
+        color: #fff;
+        font-size: 10px;
+        text-align: left;
+        width: 280px;
+        word-break: break-word;
+    }
+
+    .texto ul{
+        padding-top: 5px;
+        margin-left: -75px;
+    }
+
+    #sub{
+        font-size: 10px;
+        margin-left: 7px;
+        margin-top: -5px;
+    }
+      
+    .vantagens li{
+        margin-left: -10px;
+        list-style-type: circle;
+        font-family: 'Urbanist', sans-serif;
+        color: #fff;
+        font-size: 10px;
+    }
+    
+    .image{
+        display: flex;
+        justify-content: center;
+        margin-left: 155px;
+        margin-top: 10px;
+    }
+
+    .conteudo-principal {
+        height: 1950px;
+    
+    }
+    
+    .conteudo-principal h2{
+        font-size: 12px;
+    }
+    
+    .conteudo-principal-escrito-texto{
+        font-size: 10px;
+    }
+    
+    .conteudo-principal-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 70%;
+        height: 80%;
+    }
+
+    .conteudo-principal-instituicao{
+        flex: 1 1 150px;
+        margin:5px;
+    }
+    
+    .conteudo-principal-instituicao h3{
+        font-size: 12px;
+    }
+
+    .conteudo-principal-instituicao button{
+        width: 55%;
+        height: 35px;
+        font-size: 9px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .btn_cursos{
+        margin-top: 1700px;
+    }
+
+    .btn_cursos button{
+        width: 150px;
+        height: 50px;
+        font-size: 12px;
+    }
+    
+    .btn_cursos button:hover{
+        background-color: #75baa8;
+        color: #fff;
+    }
+
+    .contato{
+        height: 900px;
+    }
+    
+    .contato h2{
+        font-size: 12px;
+    }
+    
+    .contato p{
+        font-size: 10px;
+    }
+    
+    .formulario{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+       
+    .button input{
+        margin-left: 10px;
+        width: 275px;
+        height: 37px;
+    }
+        
+    label{
+        font-size: 12px;
+        margin-left:15px;
+    }
+
+    #nome{
+        margin-left: 10px;
+        width: 275px;
+        height: 36px;
+        font-size: 10px;
+    }
+    
+    #email{
+        margin-left: 10px;
+        width: 275px;
+        height: 36px;
+        font-size: 10px;
+    }
+    
+    #telefone{
+        margin-left: 10px;
+        width: 120px;
+        height: 36px;
+        font-size: 10px;
+    }
+    
+    #celular{
+        margin-left: 30px;
+        width: 120px;
+        height: 36px;
+        font-size: 10px;
+    }
+    
+    #lcelular{
+        margin-left: 110px;
+    }
+    
+    input::placeholder{
+        font-size: 10px;
+    }
+    
+    textarea::placeholder{
+        color: #e2e2e2;
+        font-size: 10px;
+    }
+    
+    textarea{
+        margin-left: 10px;
+        width: 275px;
+        height: 156px;
+        font-size: 10px;
+    }
+    
+    .rodape{
+        height: 80px;
+    }
+    
+    .rede img{
+        margin-top: 0;
+        width: 35px;
+        height: 35px; 
+    }
+}
+
+@media only screen  and (min-width:321px)
+                    and (max-width:375px){
+    #cabecalho-imagem{
+        display: none;
+    }
+
+    #logo-mobile{
+        display: block;
+        margin-left: -200px;
+    }
+
+     .lista-menu{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: flex;
+        flex-direction: column;   
+        flex-wrap: wrap; 
+    }
+
+    .mobile-menu-icon button{
+        margin-right: 25px;
+        background-color: transparent;
+        border: none;
+        cursor:pointer;    
+    }
+
+    .menu-mobile ul{
+        margin-left: -315px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 1rem;
+        list-style: none;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .menu-mobile .mobile-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    #cabecalho-imagem{
+        display: none;
+    }
+
+    .open{
+        display: block;
+    }
+
+    .conteudo-slider{
+        height: 315px;
+    }
+
+    .slider{
+        width: 350px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider label{
+        padding: 3px;
+        bottom: -25px;
+        border: 2px solid #75baa8;
+    }
+
+    .slider label:hover{
+        background-color: #75baa8;
+    }
+
+    .slider li:nth-child(1) label{
+        left: 120px;
+    }
+    
+    .slider li:nth-child(2) label{
+        left: 150px;
+    }
+    
+    .slider li:nth-child(3) label{
+        left: 180px;
+    }
+
+    .conteudo-quemsomos{
+        height: 335px;
+    }
+
+    .image{
+        height: 120px;
+        width: 120px;
+    }
+    
+    .texto h2{
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+   
+    .texto p{
+        padding-top: 30px;
+        font-family: 'Urbanist', sans-serif;
+        color: #fff;
+        font-size: 10px;
+        text-align: left;
+        width: 280px;
+        word-break: break-word;
+    }
+
+    #sub{
+        font-size: 10px;
+        margin-left: 7px;
+        margin-top: -5px;
+    }
+
+    .texto ul{
+        padding-top: 5px;
+        margin-left: -75px;
+    }
+      
+    .vantagens li{
+        margin-left: -10px;
+        list-style-type: circle;
+        font-family: 'Urbanist', sans-serif;
+        color: #fff;
+        font-size: 10px;
+    }
+    
+    .image{
+        display: flex;
+        justify-content: center;
+        margin-left: 215px;
+        margin-top: 10px;
+    }
+
+    .conteudo-principal {
+        height: 2000px;
+    
+    }
+    
+    .conteudo-principal h2{
+        font-size: 12px;
+    }
+    
+    .conteudo-principal-escrito-texto{
+        font-size: 10px;
+    }
+    
+    .conteudo-principal-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 70%;
+        height: 80%;
+    }
+
+    .conteudo-principal-instituicao{
+        flex: 1 1 150px;
+        margin:5px;
+    }
+    
+    .conteudo-principal-instituicao h3{
+        font-size: 12px;
+    }
+
+    .conteudo-principal-instituicao button{
+        width: 55%;
+        height: 35px;
+        font-size: 9px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .btn_cursos{
+        margin-top: 1700px;
+    }
+
+    .btn_cursos button{
+        width: 150px;
+        height: 50px;
+        font-size: 12px;
+    }
+    
+    .btn_cursos button:hover{
+        background-color: #75baa8;
+        color: #fff;
+    }
+
+    .contato{
+        height: 900px;
+    }
+    
+    .contato h2{
+        font-size: 12px;
+    }
+    
+    .contato p{
+        font-size: 10px;
+    }
+    
+    .formulario{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+       
+    .button input{
+        margin-left: 10px;
+        width: 275px;
+        height: 37px;
+    }
+        
+    label{
+        font-size: 12px;
+        margin-left:15px;
+    }
+
+    #nome{
+        margin-left: 10px;
+        width: 275px;
+        height: 36px;
+        font-size: 10px;
+    }
+    
+    #email{
+        margin-left: 10px;
+        width: 275px;
+        height: 36px;
+        font-size: 10px;
+    }
+    
+    #telefone{
+        margin-left: 10px;
+        width: 120px;
+        height: 36px;
+        font-size: 10px;
+    }
+    
+    #celular{
+        margin-left: 30px;
+        width: 120px;
+        height: 36px;
+        font-size: 10px;
+    }
+    
+    #lcelular{
+        margin-left: 110px;
+    }
+    
+    input::placeholder{
+        font-size: 10px;
+    }
+    
+    textarea::placeholder{
+        color: #e2e2e2;
+        font-size: 10px;
+    }
+    
+    textarea{
+        margin-left: 10px;
+        width: 275px;
+        height: 156px;
+        font-size: 10px;
+    }
+    
+    .rodape{
+        height: 80px;
+    }
+    
+    .rede img{
+        margin-top: 0;
+        width: 35px;
+        height: 35px; 
+    }
+}
+
+@media only screen  and (min-width:376px)
+                    and (max-width:425px){
+    #cabecalho-imagem{
+        display: none;
+    }
+
+    #logo-mobile{
+        display: block;
+        margin-right: 280px;
+    }
+
+    .lista-menu{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: flex;
+        flex-direction: column;   
+        flex-wrap: wrap; 
+    }
+
+    .mobile-menu-icon img{
+        margin-left: 120px;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor:pointer;    
+    }
+
+    .menu-mobile ul{
+        margin-left: -350px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 1rem;
+        list-style: none;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .menu-mobile .mobile-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    #cabecalho-imagem{
+        display: none;
+    }
+
+    .open{
+        display: block;
+    }
+
+    .conteudo-slider{
+        height: 350px;
+    }
+
+    .slider{
+        width: 400px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider label{
+        padding: 3px;
+        bottom: -25px;
+        border: 2px solid #75baa8;
+    }
+
+    .slider label:hover{
+        background-color: #75baa8;
+    }
+
+    .slider li:nth-child(1) label{
+        left: 140px;
+    }
+    
+    .slider li:nth-child(2) label{
+        left: 170px;
+    }
+    
+    .slider li:nth-child(3) label{
+        left: 200px;
+    }
+
+    .conteudo-quemsomos{
+        height: 335px;
+    }
+
+    .image{
+        height: 120px;
+        width: 120px;
+    }
+    
+    .texto h2{
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+   
+    .texto p{
+        padding-top: 30px;
+        font-family: 'Urbanist', sans-serif;
+        color: #fff;
+        font-size: 10px;
+        text-align: left;
+        width: 280px;
+        word-break: break-word;
+    }
+    
+    #sub{
+        font-size: 10px;
+        margin-left: 7px;
+        margin-top: -5px;
+    }
+
+    .texto ul{
+        padding-top: 5px;
+        margin-left: -75px;
+    }
+      
+    .vantagens li{
+        margin-left: -10px;
+        list-style-type: circle;
+        font-family: 'Urbanist', sans-serif;
+        color: #fff;
+        font-size: 10px;
+    }
+    
+    .image{
+        display: flex;
+        justify-content: center;
+        margin-left: 250px;
+        margin-top: 10px;
+    }
+
+    .conteudo-principal {
+        height: 2150px;
+    
+    }
+    
+    .conteudo-principal h2{
+        font-size: 12px;
+    }
+    
+    .conteudo-principal-escrito-texto{
+        font-size: 10px;
+    }
+    
+    .conteudo-principal-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 70%;
+        height: 80%;
+    }
+
+    .conteudo-principal-instituicao{
+        flex: 1 1 150px;
+        margin:5px;
+    }
+    
+    .conteudo-principal-instituicao h3{
+        font-size: 12px;
+    }
+
+    .conteudo-principal-instituicao button{
+        width: 55%;
+        height: 35px;
+        font-size: 9px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .btn_cursos{
+        margin-top: 1700px;
+    }
+
+    .btn_cursos button{
+        width: 150px;
+        height: 50px;
+        font-size: 12px;
+    }
+    
+    .btn_cursos button:hover{
+        background-color: #75baa8;
+        color: #fff;
+    }
+
+    .contato{
+        height: 900px;
+    }
+    
+    .contato h2{
+        font-size: 12px;
+    }
+    
+    .contato p{
+        font-size: 10px;
+    }
+    
+    .formulario{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+       
+    .button input{
+        margin-left: 10px;
+        width: 275px;
+        height: 37px;
+    }
+        
+    label{
+        font-size: 12px;
+        margin-left:15px;
+    }
+
+    #nome{
+        margin-left: 10px;
+        width: 275px;
+        height: 36px;
+        font-size: 10px;
+    }
+    
+    #email{
+        margin-left: 10px;
+        width: 275px;
+        height: 36px;
+        font-size: 10px;
+    }
+    
+    #telefone{
+        margin-left: 10px;
+        width: 120px;
+        height: 36px;
+        font-size: 10px;
+    }
+    
+    #celular{
+        margin-left: 30px;
+        width: 120px;
+        height: 36px;
+        font-size: 10px;
+    }
+    
+    #lcelular{
+        margin-left: 110px;
+    }
+    
+    input::placeholder{
+        font-size: 10px;
+    }
+    
+    textarea::placeholder{
+        color: #e2e2e2;
+        font-size: 10px;
+    }
+    
+    textarea{
+        margin-left: 10px;
+        width: 275px;
+        height: 156px;
+    }
+    
+    .rodape{
+        height: 80px;
+    }
+    
+    .rede img{
+        margin-top: 0;
+        width: 35px;
+        height: 35px; 
+    }
+}
+
+@media only screen  and (min-width:426px)
+                    and (max-width:768px){
+    #cabecalho-imagem{
+        display: none;
+    }
+
+    #logo-mobile{
+        display: block;
+        margin-right: 580px;
+    }
+
+    .lista-menu{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: flex;
+        flex-direction: column;   
+        flex-wrap: wrap; 
+    }
+
+    .mobile-menu-icon img{
+        margin-left: 360px;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor:pointer;    
+    }
+
+    .menu-mobile ul{
+        margin-left: -710px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 1rem;
+        list-style: none;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .menu-mobile .mobile-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    #cabecalho-imagem{
+        display: none;
+    }
+
+    .open{
+        display: block;
+    }
+
+    .conteudo-slider{
+        height: 450px;
+    }
+
+    .slider{
+        width: 700px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider label{
+        padding: 5px;
+        bottom: -30px;
+        border: 2px solid #75baa8;
+    }
+
+    .slider label:hover{
+        background-color: #75baa8;
+    }
+
+    .slider li:nth-child(1) label{
+        left: 290px;
+    }
+    
+    .slider li:nth-child(2) label{
+        left: 320px;
+    }
+    
+    .slider li:nth-child(3) label{
+        left: 350px;
+    }
+
+    .conteudo-quemsomos{
+        height: 335px;
+    }
+
+    .image{
+        height: 200px;
+        width: 200px;
+    }
+    
+    .texto h2{
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+   
+    .texto p{
+        padding-top: 30px;
+        font-family: 'Urbanist', sans-serif;
+        color: #fff;
+        font-size: 14px;
+        text-align: left;
+        width: 550px;
+        word-break: break-word;
+    }
+
+    #sub{
+        font-size: 14px;
+        margin-left: 1px;
+        margin-top: -5px;
+    }
+
+    .texto ul{
+        padding-top: 10px;
+        margin-left: -280px;
+    }
+      
+    .vantagens li{
+        margin-left: -10px;
+        list-style-type: circle;
+        font-family: 'Urbanist', sans-serif;
+        color: #fff;
+        font-size: 14px;
+    }
+    
+    .image{
+        display: flex;
+        justify-content: center;
+        margin-left: 500px;
+        margin-top: -85px;
+    }
+
+    .conteudo-principal {
+        height: 800px;
+    
+    }
+    
+    .conteudo-principal h2{
+        font-size: 16px;
+    }
+    
+    .conteudo-principal-escrito-texto{
+        font-size: 14px;
+    }
+    
+    .conteudo-principal-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+        height: 40%;
+    }
+
+    .conteudo-principal-instituicao{
+        flex: 1 1 150px;
+        margin:5px;
+    }
+    
+    .conteudo-principal-instituicao h3{
+        font-size: 12px;
+    }
+
+    .conteudo-principal-instituicao button{
+        width: 75%;
+        height: 35px;
+        font-size: 11px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .btn_cursos{
+        margin-top: 570px;
+    }
+
+    .btn_cursos button{
+        width: 150px;
+        height: 50px;
+        font-size: 12px;
+    }
+    
+    .btn_cursos button:hover{
+        background-color: #75baa8;
+        color: #fff;
+    }
+
+    .contato{
+        height: 900px;
+    }
+    
+    .contato h2{
+        font-size: 16px;
+    }
+    
+    .contato p{
+        font-size: 14px;
+    }
+    
+    .formulario{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+       
+    .button input{
+        margin-left: 10px;
+        width: 705px;
+        height: 47px;
+    }
+        
+    label{
+        font-size: 14px;
+        margin-left:15px;
+    }
+
+    #nome{
+        margin-left: 10px;
+        width: 705px;
+        height: 36px;
+        font-size: 14px;
+    }
+    
+    #email{
+        margin-left: 10px;
+        width: 705px;
+        height: 36px;
+        font-size: 14px;
+    }
+    
+    #telefone{
+        margin-left: 10px;
+        width: 335px;
+        height: 36px;
+        font-size: 14px;
+    }
+    
+    #celular{
+        margin-left: 30px;
+        width: 335px;
+        height: 36px;
+        font-size: 14px;
+    }
+    
+    #lcelular{
+        margin-left: 310px;
+    }
+    
+    input::placeholder{
+        font-size: 14px;
+    }
+    
+    textarea::placeholder{
+        color: #e2e2e2;
+        font-size: 14px;
+    }
+    
+    textarea{
+        margin-left: 10px;
+        width: 705px;
+        height: 156px;
+        font-size: 14px;
+    }
+    
+    .rodape{
+        height: 80px;
+    }
+    
+    .rede img{
+        margin-top: 0;
+        width: 35px;
+        height: 35px; 
+    }
+}
+
+@media only screen  and (min-width:769px)
+                    and (max-width:1024px){
+
+    .mobile-menu-icon{
+        display: none;
+    }
+                        
+    .menu-mobile{
+        display: none;
+    }
+    #logo-mobile{
+        display: none;
+    }
+
+    #cabecalho-imagem{
+        display: block;
+    }
+
+    .conteudo-slider{
+        height: 550px;
+    }
+
+    .slider{
+        width: 900px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider label{
+        padding: 7px;
+        bottom: -50px;
+        border: 2px solid #75baa8;
+    }
+
+    .slider label:hover{
+        background-color: #75baa8;
+    }
+
+    .slider li:nth-child(1) label{
+        left: 400px;
+    }
+    
+    .slider li:nth-child(2) label{
+        left: 430px;
+    }
+    
+    .slider li:nth-child(3) label{
+        left: 460px;
+    }
+
+    .conteudo-quemsomos{
+        height: 435px;
+    }
+
+    .image{
+        height: 250px;
+        width: 250px;
+    }
+    
+    .texto h2{
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+   
+    .texto p{
+        padding-top: 30px;
+        font-family: 'Urbanist', sans-serif;
+        color: #fff;
+        font-size: 16px;
+        text-align: left;
+        width: 550px;
+        word-break: break-word;
+    }
+
+    #sub{
+        font-size: 16px;
+        margin-left: 1px;
+        margin-top: -5px;
+    }
+
+    .texto ul{
+        padding-top: 16px;
+        margin-left: -280px;
+    }
+      
+    .vantagens li{
+        margin-left: -10px;
+        list-style-type: circle;
+        font-family: 'Urbanist', sans-serif;
+        color: #fff;
+        font-size: 14px;
+    }
+    
+    .image{
+        display: flex;
+        justify-content: center;
+        margin-left: 700px;
+        margin-top: -55px;
+    }
+
+    .conteudo-principal {
+        height: 1000px;
+    
+    }
+    
+    .conteudo-principal h2{
+        font-size: 20px;
+    }
+    
+    .conteudo-principal-escrito-texto{
+        font-size: 16px;
+    }
+    
+    .conteudo-principal-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+        height: 40%;
+    }
+    
+    .conteudo-principal-instituicao h3{
+        font-size: 12px;
+    }
+
+    .conteudo-principal-instituicao button{
+        width: 75%;
+        height: 35px;
+        font-size: 13px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .btn_cursos{
+        margin-top: 730px;
+    }
+
+    .btn_cursos button{
+        width: 250px;
+        height: 50px;
+        font-size: 14px;
+    }
+    
+    .btn_cursos button:hover{
+        background-color: #75baa8;
+        color: #fff;
+    }
+
+    .contato{
+        height: 900px;
+    }
+    
+    .contato h2{
+        font-size: 20px;
+    }
+    
+    .contato p{
+        font-size: 16px;
+    }
+    
+    .formulario{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+       
+    .button input{
+        margin-left: 10px;
+        width: 705px;
+        height: 50px;
+    }
+        
+    label{
+        font-size: 16px;
+        margin-left:15px;
+    }
+
+    #nome{
+        margin-left: 10px;
+        width: 705px;
+        height: 50px;
+        font-size: 16px;
+    }
+    
+    #email{
+        margin-left: 10px;
+        width: 705px;
+        height: 50px;
+        font-size: 16px;
+    }
+    
+    #telefone{
+        margin-left: 10px;
+        width: 335px;
+        height: 50px;
+        font-size: 16px;
+    }
+    
+    #celular{
+        margin-left: 30px;
+        width: 335px;
+        height: 50px;
+        font-size: 16px;
+    }
+    
+    #lcelular{
+        margin-left: 310px;
+    }
+    
+    input::placeholder{
+        font-size: 14px;
+    }
+    
+    textarea::placeholder{
+        color: #e2e2e2;
+        font-size: 14px;
+    }
+    
+    textarea{
+        margin-left: 10px;
+        width: 705px;
+        height: 156px;
+        font-size: 14px;
+    }
+    
+    .rodape{
+        height: 150px;
+    }
+    
+    .rede img{
+        margin-top: 0;
+        width: 55px;
+        height: 55px; 
+    }
+}
+
+@media only screen  and (min-width:1025px)
+                    and (max-width:1440px){
+
+    .mobile-menu-icon{
+        display: none;
+    }
+                        
+    .menu-mobile{
+        display: none;
+    }
+    #logo-mobile{
+        display: none;
+    }
+
+    #cabecalho-imagem{
+        display: block;
+    }
+
+    .conteudo-slider{
+        height: 650px;
+    }
+
+    .slider{
+        width: 1100px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider label{
+        padding: 7px;
+        bottom: -75px;
+        border: 2px solid #75baa8;
+    }
+
+    .slider label:hover{
+        background-color: #75baa8;
+    }
+
+    .slider li:nth-child(1) label{
+        left: 500px;
+    }
+    
+    .slider li:nth-child(2) label{
+        left: 530px;
+    }
+    
+    .slider li:nth-child(3) label{
+        left: 560px;
+    }
+
+    .conteudo-quemsomos{
+        height: 435px;
+    }
+
+    .image{
+        height: 250px;
+        width: 250px;
+    }
+    
+    .texto h2{
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 22px;
+    }
+   
+    .texto p{
+        padding-top: 30px;
+        font-family: 'Urbanist', sans-serif;
+        color: #fff;
+        font-size: 18px;
+        text-align: left;
+        width: 750px;
+        word-break: break-word;
+    }
+
+    #sub{
+        font-size: 18px;
+        margin-left: 1px;
+        margin-top: -5px;
+    }
+
+    .texto ul{
+        padding-top: 18px;
+        margin-left: -480px;
+    }
+      
+    .vantagens li{
+        margin-left: -10px;
+        list-style-type: circle;
+        font-family: 'Urbanist', sans-serif;
+        color: #fff;
+        font-size: 14px;
+    }
+    
+    .image{
+        display: flex;
+        justify-content: center;
+        margin-left: 900px;
+        margin-top: -65px;
+    }
+
+    .conteudo-principal {
+        height: 1200px;
+    
+    }
+    
+    .conteudo-principal h2{
+        font-size: 22px;
+    }
+    
+    .conteudo-principal-escrito-texto{
+        font-size: 18px;
+    }
+    
+    .conteudo-principal-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+        height: 45%;
+    }
+    
+    .conteudo-principal-instituicao h3{
+        font-size: 16px;
+    }
+
+    .conteudo-principal-instituicao button{
+        width: 75%;
+        height: 35px;
+        font-size: 13px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .btn_cursos{
+        margin-top: 895px;
+    }
+
+    .btn_cursos button{
+        width: 350px;
+        height: 60px;
+        font-size: 16px;
+    }
+    
+    .btn_cursos button:hover{
+        background-color: #75baa8;
+        color: #fff;
+    }
+
+    .contato{
+        height: 1000px;
+    }
+    
+    .contato h2{
+        font-size: 22px;
+    }
+    
+    .contato p{
+        font-size: 18px;
+    }
+    
+    .formulario{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+       
+    .button input{
+        margin-left: 10px;
+        width: 900px;
+        height: 50px;
+        font-size: 20px;
+    }
+        
+    label{
+        font-size: 18px;
+        margin-left:15px;
+    }
+
+    #nome{
+        margin-left: 10px;
+        width: 900px;
+        height: 50px;
+        font-size: 18px;
+    }
+    
+    #email{
+        margin-left: 10px;
+        width: 900px;
+        height: 50px;
+        font-size: 18px;
+    }
+    
+    #telefone{
+        margin-left: 10px;
+        width: 430px;
+        height: 50px;
+        font-size: 18px;
+    }
+    
+    #celular{
+        margin-left: 40px;
+        width: 430px;
+        height: 50px;
+        font-size: 18px;
+    }
+    
+    #lcelular{
+        margin-left: 310px;
+    }
+    
+    input::placeholder{
+        font-size: 18px;
+    }
+    
+    textarea::placeholder{
+        color: #e2e2e2;
+        font-size: 18px;
+    }
+    
+    textarea{
+        margin-left: 10px;
+        width: 900px;
+        height: 200px;
+        font-size: 18px;
+    }
+    
+    .rodape{
+        height: 230px;
+    }
+    
+    .rede img{
+        margin-top: 0;
+        width: 75px;
+        height: 75px; 
+    }
+}
+
+@media only screen  and (min-width:1441px)
+                    and (max-width:2560px){
+
+    .mobile-menu-icon{
+        display: none;
+    }
+
+    .lista-menu{
+        margin-left: -900px;
+    }
+
+    .lista-menu li{
+        font-size: 20px;
+        margin-left: 50px;
+    }
+                        
+    .menu-mobile{
+        display: none;
+    }
+    #logo-mobile{
+        display: none;
+    }
+
+    #cabecalho-imagem{
+        display: block;
+        width: 150px;
+        height: 100px;
+        margin-left: 300px;
+    }
+
+    .conteudo-slider{
+        margin-top: 95px;
+        height: 700px;
+    }
+
+    .slider{
+        width: 2500px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider label{
+        padding: 10px;
+        bottom: -75px;
+        border: 2px solid #75baa8;
+    }
+
+    .slider label:hover{
+        background-color: #75baa8;
+    }
+
+    .slider li:nth-child(1) label{
+        left: 500px;
+    }
+    
+    .slider li:nth-child(2) label{
+        left: 550px;
+    }
+    
+    .slider li:nth-child(3) label{
+        left: 600px;
+    }
+
+    .conteudo-quemsomos{
+        height: 635px;
+    }
+
+    .image{
+        height: 400px;
+        width: 400px;
+    }
+    
+    .texto h2{
+        font-family: 'Urbanist', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 32px;
+    }
+   
+    .texto p{
+        padding-top: 70px;
+        font-family: 'Urbanist', sans-serif;
+        color: #fff;
+        font-size: 24px;
+        text-align: left;
+        width: 1050px;
+        word-break: break-word;
+    }
+
+    #sub{
+        font-size: 24px;
+        margin-left: 1px;
+        margin-top: -5px;
+    }
+
+    .texto ul{
+        padding-top: 24px;
+        margin-left: -620px;
+    }
+      
+    .vantagens li{
+        margin-left: -10px;
+        list-style-type: circle;
+        font-family: 'Urbanist', sans-serif;
+        color: #fff;
+        font-size: 24px;
+    }
+    
+    .image{
+        display: flex;
+        justify-content: center;
+        margin-left: 1500px;
+        margin-top: -175px;
+    }
+
+    .conteudo-principal {
+        height: 2100px;
+    
+    }
+    
+    .conteudo-principal h2{
+        font-size: 32px;
+        margin-top: 30px;
+    }
+    
+    .conteudo-principal-escrito-texto{
+        font-size: 24px;
+    }
+    
+    .conteudo-principal-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+        height: 45%;
+        margin-top: 50px;
+    }
+    
+    .conteudo-principal-instituicao h3{
+        font-size: 32px;
+        margin-top: 20px;
+    }
+
+    .conteudo-principal-instituicao button{
+        width: 75%;
+        height: 75px;
+        font-size: 24px;
+        margin-top: 80px;
+        margin-bottom: 15px;
+    }
+
+    .btn_cursos{
+        margin-top: 1655px;
+    }
+
+    .btn_cursos button{
+        width: 550px;
+        height: 110px;
+        font-size: 24px;
+    }
+    
+    .btn_cursos button:hover{
+        background-color: #75baa8;
+        color: #fff;
+    }
+
+    .contato{
+        height: 1300px;
+    }
+    
+    .contato h2{
+        font-size: 32px;
+    }
+    
+    .contato p{
+        font-size: 24px;
+    }
+    
+    .formulario{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+       
+    .button input{
+        margin-left: 10px;
+        width: 1200px;
+        height: 70px;
+        margin-top: 40px;
+        font-size: 24px;
+    }
+        
+    label{
+        font-size: 24px;
+        margin-left:15px;
+    }
+
+    #nome{
+        margin-left: 10px;
+        width: 1200px;
+        height: 70px;
+        font-size: 24px;
+    }
+    
+    #email{
+        margin-left: 10px;
+        width: 1200px;
+        height: 70px;
+        font-size: 24px;
+    }
+    
+    #telefone{
+        margin-left: 10px;
+        width: 550px;
+        height: 70px;
+        font-size: 24px;
+    }
+    
+    #celular{
+        margin-left: 90px;
+        width: 550px;
+        height: 70px;
+        font-size: 24px;
+    }
+    
+    #lcelular{
+        margin-left: 310px;
+    }
+    
+    input::placeholder{
+        font-size: 24px;
+    }
+    
+    textarea::placeholder{
+        color: #e2e2e2;
+        font-size: 24px;
+    }
+    
+    textarea{
+        margin-left: 10px;
+        width: 1200px;
+        height: 250px;
+        font-size: 24px;
+    }
+    
+    .rodape{
+        height: 230px;
+    }
+    
+    .rede img{
+        margin-top: 0;
+        width: 95px;
+        height: 95px; 
+    }
+}

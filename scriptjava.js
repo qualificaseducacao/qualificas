@@ -1,25 +1,27 @@
 function menuShow(){
     let menuMobile = document.querySelector('.menu-mobile');
-
+    
     if (menuMobile.classList.contains('open')){
         menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "./img/menu_white_36dp.svg"; 
+        document.querySelector('.icon').src = "./img/menu_white_36dp.svg";
+        document.querySelector('.icon').style.marginTop = "-40px";
         exibir();
     }else{
         menuMobile.classList.add('open');
         document.querySelector('.icon').src = "./img/close_white_36dp.svg";
+        document.querySelector('.icon').style.marginTop = "0px";
         menuMobile = true;
-        ocultar();
+        ocultar();       
     }
 
 }
 
 function exibir() {
-    document.getElementById("logo-imagem").style.display = "block";
+    document.getElementById("logo-mobile").style.display = "block";
 }
 
 function ocultar() {
-    document.getElementById("logo-imagem").style.display = "none";
+    document.getElementById("logo-mobile").style.display = "none";
 }
 
 function ocultarExibir() {
