@@ -1,112 +1,112 @@
 <?php
     include("conexao.php");
-    $consulta1 = "SELECT NOME_FANTASIA FROM INSTITUICAO WHERE IDINSTITUICAO = 1";
-    $con = $conector->query($consulta1) or die ($mysqli->error);
+    $consulta1 = "SELECT NOME_FANTASIA FROM instituicao WHERE IDINSTITUICAO = 1";
+    $con = $conector->query($consulta1) or die ($conector->error);
 
-    $consulta2 = "SELECT * FROM ENDERECO WHERE IDENDERECO = 1";
-    $con2 = $conector->query($consulta2) or die ($mysqli->error);
+    $consulta2 = "SELECT * FROM endereco WHERE IDENDERECO = 1";
+    $con2 = $conector->query($consulta2) or die ($conector->error);
 
-    $consulta3 = "SELECT * FROM CONTATO WHERE IDCONTATO = 1";
-    $con3 = $conector->query($consulta3) or die ($mysqli->error);
+    $consulta3 = "SELECT * FROM contato WHERE IDCONTATO = 1";
+    $con3 = $conector->query($consulta3) or die ($conector->error);
 
-    $consulta4 = "SELECT * FROM CONTATO WHERE IDCONTATO = 1";
-    $con4 = $conector->query($consulta4) or die ($mysqli->error);
+    $consulta4 = "SELECT * FROM contato WHERE IDCONTATO = 1";
+    $con4 = $conector->query($consulta4) or die ($conector->error);
 
-    $consulta5 = "SELECT * FROM CURSO WHERE IDCURSO = 1";
-    $con5 = $conector->query($consulta5) or die ($mysqli->error);
+    $consulta5 = "SELECT * FROM curso WHERE IDCURSO = 1";
+    $con5 = $conector->query($consulta5) or die ($conector->error);
 
-    $consulta6 = "SELECT * FROM CURSO WHERE IDCURSO = 2";
-    $con6 = $conector->query($consulta6) or die ($mysqli->error);
+    $consulta6 = "SELECT * FROM curso WHERE IDCURSO = 2";
+    $con6 = $conector->query($consulta6) or die ($conector->error);
     
-    $consulta7 = "SELECT * FROM CURSO WHERE IDCURSO = 3";
-    $con7 = $conector->query($consulta7) or die ($mysqli->error);
+    $consulta7 = "SELECT * FROM curso WHERE IDCURSO = 3";
+    $con7 = $conector->query($consulta7) or die ($conector->error);
 
-    $consulta8 = "SELECT * FROM CURSO WHERE IDCURSO = 4";
-    $con8 = $conector->query($consulta8) or die ($mysqli->error);
+    $consulta8 = "SELECT * FROM curso WHERE IDCURSO = 4";
+    $con8 = $conector->query($consulta8) or die ($conector->error);
 
-    $consulta9 = "SELECT * FROM CURSO WHERE IDCURSO = 5";
-    $con9 = $conector->query($consulta9) or die ($mysqli->error);
+    $consulta9 = "SELECT * FROM curso WHERE IDCURSO = 5";
+    $con9 = $conector->query($consulta9) or die ($conector->error);
 
-    $consulta10 = "SELECT * FROM CURSO WHERE IDCURSO = 6";
-    $con10 = $conector->query($consulta10) or die ($mysqli->error);
+    $consulta10 = "SELECT * FROM curso WHERE IDCURSO = 6";
+    $con10 = $conector->query($consulta10) or die ($conector->error);
 
-    $consulta11 = "SELECT * FROM CURSO WHERE IDCURSO = 7";
-    $con11 = $conector->query($consulta11) or die ($mysqli->error);
+    $consulta11 = "SELECT * FROM curso WHERE IDCURSO = 7";
+    $con11 = $conector->query($consulta11) or die ($conector->error);
 
-    $consulta12 = "SELECT * FROM CURSO WHERE IDCURSO = 8";
-    $con12 = $conector->query($consulta12) or die ($mysqli->error);
+    $consulta12 = "SELECT * FROM curso WHERE IDCURSO = 8";
+    $con12 = $conector->query($consulta12) or die ($conector->error);
 
-    $consulta13 = "SELECT NOME_FANTASIA FROM INSTITUICAO WHERE IDINSTITUICAO = 2";
-    $con13 = $conector->query($consulta13) or die ($mysqli->error);
+    $consulta13 = "SELECT NOME_FANTASIA FROM instituicao WHERE IDINSTITUICAO = 2";
+    $con13 = $conector->query($consulta13) or die ($conector->error);
 
-    $consulta14 = "SELECT * FROM ENDERECO WHERE IDENDERECO = 2";
-    $con14 = $conector->query($consulta14) or die ($mysqli->error);
+    $consulta14 = "SELECT * FROM endereco WHERE IDENDERECO = 2";
+    $con14 = $conector->query($consulta14) or die ($conector->error);
 
-    $consulta15 = "SELECT * FROM CONTATO WHERE IDCONTATO = 2";
-    $con15 = $conector->query($consulta15) or die ($mysqli->error);
+    $consulta15 = "SELECT * FROM contato WHERE IDCONTATO = 2";
+    $con15 = $conector->query($consulta15) or die ($conector->error);
 
-    $consulta16 = "SELECT * FROM CONTATO WHERE IDCONTATO = 2";
-    $con16 = $conector->query($consulta16) or die ($mysqli->error);
+    $consulta16 = "SELECT * FROM contato WHERE IDCONTATO = 2";
+    $con16 = $conector->query($consulta16) or die ($conector->error);
 
-    $consulta17 = "SELECT * FROM CURSO WHERE IDCURSO = 9";
-    $con17 = $conector->query($consulta17) or die ($mysqli->error);
+    $consulta17 = "SELECT * FROM curso WHERE IDCURSO = 9";
+    $con17 = $conector->query($consulta17) or die ($conector->error);
 
-    $consulta18 = "SELECT * FROM CURSO WHERE IDCURSO = 10";
-    $con18 = $conector->query($consulta17) or die ($mysqli->error);
+    $consulta18 = "SELECT * FROM curso WHERE IDCURSO = 10";
+    $con18 = $conector->query($consulta17) or die ($conector->error);
 
-    $consulta19 = "SELECT * FROM CURSO WHERE IDCURSO = 11";
-    $con19 = $conector->query($consulta19) or die ($mysqli->error);
+    $consulta19 = "SELECT * FROM curso WHERE IDCURSO = 11";
+    $con19 = $conector->query($consulta19) or die ($conector->error);
 
-    $consulta20 = "SELECT NOME_FANTASIA FROM INSTITUICAO WHERE IDINSTITUICAO = 3";
-    $con20 = $conector->query($consulta20) or die ($mysqli->error);
+    $consulta20 = "SELECT NOME_FANTASIA FROM instituicao WHERE IDINSTITUICAO = 3";
+    $con20 = $conector->query($consulta20) or die ($conector->error);
 
-    $consulta21 = "SELECT * FROM ENDERECO WHERE IDENDERECO = 3";
-    $con21 = $conector->query($consulta21) or die ($mysqli->error);
+    $consulta21 = "SELECT * FROM endereco WHERE IDENDERECO = 3";
+    $con21 = $conector->query($consulta21) or die ($conector->error);
 
-    $consulta22 = "SELECT * FROM CONTATO WHERE IDCONTATO = 3";
-    $con22 = $conector->query($consulta22) or die ($mysqli->error);
+    $consulta22 = "SELECT * FROM contato WHERE IDCONTATO = 3";
+    $con22 = $conector->query($consulta22) or die ($conector->error);
 
-    $consulta23 = "SELECT * FROM CONTATO WHERE IDCONTATO = 3";
-    $con23 = $conector->query($consulta23) or die ($mysqli->error);
+    $consulta23 = "SELECT * FROM contato WHERE IDCONTATO = 3";
+    $con23 = $conector->query($consulta23) or die ($conector->error);
 
-    $consulta24 = "SELECT * FROM CURSO WHERE IDCURSO = 12";
-    $con24 = $conector->query($consulta24) or die ($mysqli->error);
+    $consulta24 = "SELECT * FROM curso WHERE IDCURSO = 12";
+    $con24 = $conector->query($consulta24) or die ($conector->error);
 
-    $consulta25 = "SELECT * FROM CURSO WHERE IDCURSO = 13";
-    $con25 = $conector->query($consulta25) or die ($mysqli->error);
+    $consulta25 = "SELECT * FROM curso WHERE IDCURSO = 13";
+    $con25 = $conector->query($consulta25) or die ($conector->error);
 
-    $consulta26 = "SELECT * FROM CURSO WHERE IDCURSO = 14";
-    $con26 = $conector->query($consulta26) or die ($mysqli->error);
+    $consulta26 = "SELECT * FROM curso WHERE IDCURSO = 14";
+    $con26 = $conector->query($consulta26) or die ($conector->error);
 
-    $consulta27 = "SELECT * FROM CURSO WHERE IDCURSO = 15";
-    $con27 = $conector->query($consulta27) or die ($mysqli->error);
+    $consulta27 = "SELECT * FROM curso WHERE IDCURSO = 15";
+    $con27 = $conector->query($consulta27) or die ($conector->error);
 
-    $consulta28 = "SELECT * FROM CURSO WHERE IDCURSO = 16";
-    $con28 = $conector->query($consulta28) or die ($mysqli->error);
+    $consulta28 = "SELECT * FROM curso WHERE IDCURSO = 16";
+    $con28 = $conector->query($consulta28) or die ($conector->error);
 
-    $consulta29 = "SELECT * FROM CURSO WHERE IDCURSO = 17";
-    $con29 = $conector->query($consulta29) or die ($mysqli->error);
+    $consulta29 = "SELECT * FROM curso WHERE IDCURSO = 17";
+    $con29 = $conector->query($consulta29) or die ($conector->error);
 
-    $consulta30 = "SELECT * FROM CURSO WHERE IDCURSO = 18";
-    $con30 = $conector->query($consulta30) or die ($mysqli->error);
+    $consulta30 = "SELECT * FROM curso WHERE IDCURSO = 18";
+    $con30 = $conector->query($consulta30) or die ($conector->error);
 
-    $consulta31 = "SELECT * FROM CURSO WHERE IDCURSO = 19";
-    $con31 = $conector->query($consulta31) or die ($mysqli->error);
+    $consulta31 = "SELECT * FROM curso WHERE IDCURSO = 19";
+    $con31 = $conector->query($consulta31) or die ($conector->error);
 
-    $consulta32 = "SELECT NOME_FANTASIA FROM INSTITUICAO WHERE IDINSTITUICAO = 4";
-    $con32 = $conector->query($consulta32) or die ($mysqli->error);
+    $consulta32 = "SELECT NOME_FANTASIA FROM instituicao WHERE IDINSTITUICAO = 4";
+    $con32 = $conector->query($consulta32) or die ($conector->error);
 
-    $consulta33 = "SELECT * FROM ENDERECO WHERE IDENDERECO = 4";
-    $con33 = $conector->query($consulta33) or die ($mysqli->error);
+    $consulta33 = "SELECT * FROM endereco WHERE IDENDERECO = 4";
+    $con33 = $conector->query($consulta33) or die ($conector->error);
 
-    $consulta34 = "SELECT * FROM CONTATO WHERE IDCONTATO = 4";
-    $con34 = $conector->query($consulta34) or die ($mysqli->error);
+    $consulta34 = "SELECT * FROM contato WHERE IDCONTATO = 4";
+    $con34 = $conector->query($consulta34) or die ($conector->error);
 
-    $consulta35 = "SELECT * FROM CONTATO WHERE IDCONTATO = 4";
-    $con35 = $conector->query($consulta35) or die ($mysqli->error);
+    $consulta35 = "SELECT * FROM contato WHERE IDCONTATO = 4";
+    $con35 = $conector->query($consulta35) or die ($conector->error);
 
-    $consulta36 = "SELECT * FROM CURSO WHERE IDCURSO = 20";
-    $con36 = $conector->query($consulta36) or die ($mysqli->error);
+    $consulta36 = "SELECT * FROM curso WHERE IDCURSO = 20";
+    $con36 = $conector->query($consulta36) or die ($conector->error);
 ?>    
 
 <!DOCTYPE html>

@@ -1,22 +1,22 @@
 <?php
     include("conexao.php");
-    $consulta1 = "SELECT NOME_CURSO FROM CURSO WHERE IDCURSO = 4";
-    $con = $conector->query($consulta1) or die ($mysqli->error);
+    $consulta1 = "SELECT NOME_CURSO FROM curso WHERE IDCURSO = 4";
+    $con = $conector->query($consulta1) or die ($conector->error);
 
-    $consulta2 = "SELECT NOME_CURSO FROM CURSO WHERE IDCURSO = 9";
-    $con2 = $conector->query($consulta2) or die ($mysqli->error);
+    $consulta2 = "SELECT NOME_CURSO FROM curso WHERE IDCURSO = 9";
+    $con2 = $conector->query($consulta2) or die ($conector->error);
     
-    $consulta3 = "SELECT NOME_CURSO FROM CURSO WHERE IDCURSO = 13";
-    $con3 = $conector->query($consulta3) or die ($mysqli->error);
+    $consulta3 = "SELECT NOME_CURSO FROM curso WHERE IDCURSO = 13";
+    $con3 = $conector->query($consulta3) or die ($conector->error);
 
-    $consulta4 = "SELECT NOME_CURSO FROM CURSO WHERE IDCURSO = 19";
-    $con4 = $conector->query($consulta4) or die ($mysqli->error);
+    $consulta4 = "SELECT NOME_CURSO FROM curso WHERE IDCURSO = 19";
+    $con4 = $conector->query($consulta4) or die ($conector->error);
 
-    $consulta5 = "SELECT NOME_CURSO FROM CURSO WHERE IDCURSO = 3";
-    $con5 = $conector->query($consulta5) or die ($mysqli->error);
+    $consulta5 = "SELECT NOME_CURSO FROM curso WHERE IDCURSO = 3";
+    $con5 = $conector->query($consulta5) or die ($conector->error);
 
-    $consulta6 = "SELECT NOME_CURSO FROM CURSO WHERE IDCURSO = 17";
-    $con6 = $conector->query($consulta6) or die ($mysqli->error);
+    $consulta6 = "SELECT NOME_CURSO FROM curso WHERE IDCURSO = 17";
+    $con6 = $conector->query($consulta6) or die ($conector->error);
   
     if(isset($_POST['submit'])){
         include("conexao.php");
